@@ -54,6 +54,5 @@ jobs:
             echo "Checking: $file"
             markdown-link-check "$file" --config .github/link-check-config.json || true
           done
-          
           echo "✅ Link checking completed!"
 
