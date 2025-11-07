@@ -1,0 +1,62 @@
+name: Translate README (Alternative - action-translate-readme)
+
+# Альтернативный workflow используя action-translate-readme
+# Этот action парсит Markdown через AST и переводит только текстовые узлы
+# Раскомментируйте этот файл и закомментируйте auto-translate-readmes.yml если хотите использовать
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Translate to Russian
+        uses: Lin-jun-xiang/action-translate-readme@main
+        with:
+          LANG: ru
+          FILE_PATH: README.md
+          TARGET_FILE_PATH: README.ru.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Translate to Chinese
+        uses: Lin-jun-xiang/action-translate-readme@main
+        with:
+          LANG: zh-CN
+          FILE_PATH: README.md
+          TARGET_FILE_PATH: README.zh-CN.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Translate to Spanish
+        uses: Lin-jun-xiang/action-translate-readme@main
+        with:
+          LANG: es
+          FILE_PATH: README.md
+          TARGET_FILE_PATH: README.es.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Commit and push translations
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.ru.md README.zh-CN.md README.es.md
+          if git diff --staged --quiet; then
+            echo "✨ No changes to commit"
+          else
+            git commit -m "🌍 chore: auto-update README translations [skip ci]"
+            git push
+          fi
+

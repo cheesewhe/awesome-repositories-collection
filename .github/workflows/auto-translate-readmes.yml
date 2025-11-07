@@ -86,13 +86,13 @@ jobs:
                   print(f'⚠️ Пакет {from_code} → {to_code} не найден')
           "
       
-      - name: Run translation
+      - name: Run translation (AST-based)
         env:
           SOURCE_LANG: ${{ github.event.inputs.source_language || 'en' }}
           TARGET_LANGS: ${{ github.event.inputs.target_languages || 'ru,zh-CN,es' }}
         run: |
-          echo "🚀 Запуск перевода..."
-          python scripts/translate_readmes.py
+          echo "🚀 Запуск улучшенного перевода с сохранением Markdown структуры..."
+          python scripts/translate_readmes_ast.py
       
       - name: Commit and push translations
         run: |
