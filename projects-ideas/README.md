@@ -22,6 +22,7 @@ Each project has its own markdown file with detailed description, features, use 
 - **[yolo-training-template](./yolo-training-template.md)** — Ready-to-use template for training YOLO models on any Kaggle datasets in just a few hours.
 
 - **[raspberry-pi-5-hailo-8-pothole-detection](./raspberry-pi-5-hailo-8-pothole-detection.md)** — Automatic pothole detection, classification and sizing system running on Raspberry Pi 5 with Hailo-8 AI acceleration.
+- **[HuatuoGPT-o1](./huatuogpt-o1.md)** — Medical reasoning LLM idea: clinical Q&A, diagnosis assistance, and guidelines-grounded reasoning using HuatuoGPT-o1.
 
 ### Industrial & Engineering
 

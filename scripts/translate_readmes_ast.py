@@ -102,117 +102,180 @@ def translate_markdown_ast(content: str, target_lang: str, source_lang: str = 'e
 def translate_markdown_simple(content: str, target_lang: str, source_lang: str = 'en') -> str:
     """
     Улучшенный метод перевода с защитой Markdown элементов
-    Сохраняет структуру списков, заголовков, ссылок и кода
+    Сохраняет структуру заголовков, списков, цитат, ссылок, таблиц и кода
     """
-    # Разбиваем на строки для обработки
+    # Вспомогательные защиты и восстановление элементов (устойчивые плейсхолдеры)
+    def protect_technical_elements(text: str):
+        placeholders = {}
+        protected_text = text
+        counter = 0
+        # code blocks (в одной строке встречается редко, но поддержим)
+        for match in reversed(list(re.finditer(r'```[\s\S]*?```', protected_text))):
+            placeholder = f"XA{str(counter).zfill(4)}B"
+            placeholders[placeholder] = match.group(0)
+            s, e = match.span()
+            protected_text = protected_text[:s] + placeholder + protected_text[e:]
+            counter += 1
+        # ссылки [text](url)
+        for match in reversed(list(re.finditer(r'\[([^\]]+)\]\(([^\)]+)\)', protected_text))):
+            placeholder = f"XC{str(counter).zfill(4)}D"
+            placeholders[placeholder] = match.group(0)
+            s, e = match.span()
+            protected_text = protected_text[:s] + placeholder + protected_text[e:]
+            counter += 1
+        # inline code
+        for match in reversed(list(re.finditer(r'(?<!`)`([^`\n]+)`(?!`)', protected_text))):
+            placeholder = f"XE{str(counter).zfill(4)}F"
+            placeholders[placeholder] = match.group(0)
+            s, e = match.span()
+            protected_text = protected_text[:s] + placeholder + protected_text[e:]
+            counter += 1
+        # standalone URLs
+        for match in reversed(list(re.finditer(r'(?<!\]\()https?://[^\s\)<>]+', protected_text))):
+            placeholder = f"XG{str(counter).zfill(4)}H"
+            placeholders[placeholder] = match.group(0)
+            s, e = match.span()
+            protected_text = protected_text[:s] + placeholder + protected_text[e:]
+            counter += 1
+        # HTML
+        for match in reversed(list(re.finditer(r'<[^>]+>', protected_text))):
+            placeholder = f"XI{str(counter).zfill(4)}J"
+            placeholders[placeholder] = match.group(0)
+            s, e = match.span()
+            protected_text = protected_text[:s] + placeholder + protected_text[e:]
+            counter += 1
+        return protected_text, placeholders
+
+    def restore_technical_elements(translated_text: str, placeholders: dict[str, str]) -> str:
+        result = translated_text
+        sorted_placeholders = sorted(placeholders.items(), key=lambda x: -len(x[0]))
+        for placeholder, original in sorted_placeholders:
+            if placeholder in result:
+                result = result.replace(placeholder, original)
+                continue
+            # Пытаемся восстановить испорченные плейсхолдеры
+            num_match = re.search(r'\d+', placeholder)
+            if not num_match:
+                continue
+            placeholder_num = num_match.group()
+            prefix = placeholder[:2]
+            suffix = placeholder[-1]
+            patterns = [
+                placeholder,
+                f"{prefix}\\s*{placeholder_num}\\s*{suffix}",
+                f"{prefix}{placeholder_num}\\s+{suffix}",
+                f"{prefix}\\s+{placeholder_num}{suffix}",
+                f"{prefix[0]}\\s*{prefix[1]}\\s*{placeholder_num}\\s*{suffix}",
+                placeholder.upper(),
+                placeholder.lower(),
+                placeholder_num,
+                f"{prefix[1]}{placeholder_num}",
+                f"{placeholder_num}{suffix}",
+            ]
+            for pattern in patterns:
+                matches = list(re.finditer(pattern, result, re.IGNORECASE))
+                if matches:
+                    for m in reversed(matches):
+                        s, e = m.span()
+                        result = result[:s] + original + result[e:]
+        return result
+
+    def translate_text_segment(text: str) -> str:
+        if not text:
+            return text
+        protected, placeholders = protect_technical_elements(text)
+        translated = translate_text_simple(protected, target_lang, source_lang)
+        if not translated:
+            return text
+        return restore_technical_elements(translated, placeholders)
+
+    # Обработка построчно, с учётом структурных элементов
     lines = content.split('\n')
     result_lines = []
-    
     in_code_block = False
-    code_block_lang = None
-    
-    for i, line in enumerate(lines):
-        original_line = line
-        
-        # Обрабатываем code blocks
-        if line.strip().startswith('```'):
-            if not in_code_block:
-                in_code_block = True
-                code_block_lang = line.strip()[3:].strip()
-            else:
-                in_code_block = False
-                code_block_lang = None
+
+    for line in lines:
+        stripped = line.strip()
+        # Границы блока кода
+        if stripped.startswith('```'):
+            in_code_block = not in_code_block
             result_lines.append(line)
             continue
-        
-        # Пропускаем весь код внутри code blocks
         if in_code_block:
             result_lines.append(line)
             continue
-        
-        # Пропускаем пустые строки и разделители
-        if not line.strip() or line.strip() == '---' or line.strip().startswith('<!--'):
+
+        # Пустые, разделители и HTML — как есть
+        if not stripped or stripped == '---' or stripped.startswith('<!--') or re.match(r'^\s*<[^>]+>\s*$', line):
             result_lines.append(line)
             continue
-        
-        # Пропускаем HTML теги
-        if re.match(r'^\s*<[^>]+>\s*$', line):
-            result_lines.append(line)
+
+        # Таблицы
+        if '|' in line:
+            # Строка выравнивания таблицы
+            if re.match(r'^\s*\|?\s*:?-{1,}\s*(:?\s*\|+\s*:?-{1,}\s*:?\s*)+\|?\s*$', line):
+                result_lines.append(line)
+                continue
+            # Перевод содержимого ячеек
+            leading_ws = re.match(r'^\s*', line).group(0)
+            has_leading_pipe = line.strip().startswith('|')
+            has_trailing_pipe = line.strip().endswith('|')
+            raw = line.strip().strip('|')
+            cells = raw.split('|')
+            translated_cells = []
+            for cell in cells:
+                cell_content = cell
+                if re.match(r'^\s*:?-{1,}\s*:?\s*$', cell_content):
+                    translated_cells.append(cell)
+                    continue
+                translated_cells.append(translate_text_segment(cell_content.strip()))
+            middle = ' | '.join(translated_cells)
+            rebuilt = f"{leading_ws}{'| ' if has_leading_pipe else ''}{middle}{' |' if has_trailing_pipe else ''}"
+            result_lines.append(rebuilt)
             continue
-        
-        # Защищаем все технические элементы перед переводом
-        placeholders = {}
-        counter = 0
-        
-        # 1. Защищаем code blocks (если есть в строке)
-        def protect_code_block(match):
-            nonlocal counter
-            placeholder = f"__CODEBLOCK_{counter}__"
-            placeholders[placeholder] = match.group(0)
-            counter += 1
-            return placeholder
-        
-        protected_line = re.sub(r'```[\s\S]*?```', protect_code_block, line)
-        
-        # 2. Защищаем ссылки [text](url) - ВАЖНО: защищаем URL отдельно
-        def protect_link(match):
-            nonlocal counter
-            link_text = match.group(1)
-            link_url = match.group(2)
-            # Защищаем URL отдельно
-            url_placeholder = f"__URL_{counter}__"
-            placeholders[url_placeholder] = link_url
-            counter += 1
-            # Возвращаем ссылку с защищенным URL
-            return f"[{link_text}]({url_placeholder})"
-        
-        protected_line = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', protect_link, protected_line)
-        
-        # 3. Защищаем inline код `code`
-        def protect_inline_code(match):
-            nonlocal counter
-            placeholder = f"__INLINECODE_{counter}__"
-            placeholders[placeholder] = match.group(0)
-            counter += 1
-            return placeholder
-        
-        protected_line = re.sub(r'`([^`]+)`', protect_inline_code, protected_line)
-        
-        # 4. Защищаем standalone URLs (не в ссылках)
-        def protect_url(match):
-            nonlocal counter
-            placeholder = f"__STANDALONEURL_{counter}__"
-            placeholders[placeholder] = match.group(0)
-            counter += 1
-            return placeholder
-        
-        protected_line = re.sub(r'(?<!\]\()https?://[^\s\)<>]+', protect_url, protected_line)
-        
-        # 5. Защищаем Markdown заголовки (сохраняем # символы)
-        header_match = re.match(r'^(#{1,6})\s+(.+)$', protected_line)
-        if header_match:
-            header_level = header_match.group(1)
-            header_text = header_match.group(2)
-            # Переводим только текст заголовка
-            translated_text = translate_text_simple(header_text, target_lang, source_lang)
-            if translated_text:
-                protected_line = f"{header_level} {translated_text}"
+
+        # Цитаты
+        m_quote = re.match(r'^(\s*(?:>+\s*)+)(.+)$', line)
+        if m_quote:
+            prefix = m_quote.group(1)
+            body = m_quote.group(2)
+            # Внутри — проверяем заголовки/списки, иначе переводим целиком
+            h = re.match(r'^(#{1,6})\s+(.+)$', body.strip())
+            if h:
+                translated_body = f"{h.group(1)} {translate_text_segment(h.group(2))}"
             else:
-                protected_line = line
-        else:
-            # Переводим обычную строку
-            translated_line = translate_text_simple(protected_line, target_lang, source_lang)
-            if translated_line:
-                protected_line = translated_line
-        
-        # Восстанавливаем все защищенные элементы
-        # Важно: восстанавливаем в обратном порядке длины, чтобы избежать конфликтов
-        sorted_placeholders = sorted(placeholders.items(), key=lambda x: -len(x[0]))
-        for placeholder, original in sorted_placeholders:
-            protected_line = protected_line.replace(placeholder, original)
-        
-        result_lines.append(protected_line)
-    
+                u = re.match(r'^(\s*[-*+]\s+)(\[[ xX]\]\s+)?(.+)$', body)
+                o = re.match(r'^(\s*\d+[.)]\s+)(.+)$', body)
+                if u:
+                    checkbox = u.group(2) or ''
+                    translated_body = f"{u.group(1)}{checkbox}{translate_text_segment(u.group(3))}"
+                elif o:
+                    translated_body = f"{o.group(1)}{translate_text_segment(o.group(2))}"
+                else:
+                    translated_body = translate_text_segment(body)
+            result_lines.append(f"{prefix}{translated_body}")
+            continue
+
+        # Заголовки
+        m_header = re.match(r'^(\s*#{1,6})\s+(.+)$', line)
+        if m_header:
+            result_lines.append(f"{m_header.group(1)} {translate_text_segment(m_header.group(2))}")
+            continue
+
+        # Списки (маркированные / нумерованные)
+        m_ul = re.match(r'^(\s*[-*+]\s+)(\[[ xX]\]\s+)?(.+)$', line)
+        if m_ul:
+            checkbox = m_ul.group(2) or ''
+            result_lines.append(f"{m_ul.group(1)}{checkbox}{translate_text_segment(m_ul.group(3))}")
+            continue
+        m_ol = re.match(r'^(\s*\d+[.)]\s+)(.+)$', line)
+        if m_ol:
+            result_lines.append(f"{m_ol.group(1)}{translate_text_segment(m_ol.group(2))}")
+            continue
+
+        # Обычная строка
+        result_lines.append(translate_text_segment(line))
+
     return '\n'.join(result_lines)
 
 def sync_translations_ast(source_lang='en', target_langs=None):

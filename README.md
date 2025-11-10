@@ -161,6 +161,7 @@ Tools for testing APIs, debugging network traffic, and managing connections.
 - **[Postman](https://freecodecamp.org/news/master-api-testing-with-postman)** — Free open-source version of Postman for API testing. Complete API development environment with automated testing capabilities.
 - **[Mirotalk](https://github.com/mirotalk/mirotalk)** — P2P video conferencing via WebRTC. Simple and fast alternative to Zoom and Google Meet with peer-to-peer connections.
 - **[Chatwoot](https://github.com/chatwoot/chatwoot)** — Open-source customer engagement platform. Unified inbox for all customer conversations across multiple channels.
+- **[Espectre](https://github.com/francescopace/espectre)** — Wi‑Fi CSI-based presence/motion detection using commodity routers. Local-first occupancy sensing with Home Assistant integration.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -255,6 +256,7 @@ Container management and cloud storage solutions.
 - **[Rancher](https://github.com/rancherfederal/rancher)** — Enterprise Kubernetes management platform. Complete solution for deploying, managing, and securing Kubernetes clusters at scale.
 - **[OpenShift](https://github.com/openshift/origin)** — Enterprise Kubernetes platform by Red Hat. Production-ready container platform with developer tools and automated operations.
 - **[Windows Docker Container](https://github.com/docker/library/tree/master/windows)** — Official Windows base images for Docker. Run Windows applications in containers using Docker Desktop or Windows containers.
+- **[docker2exe](https://github.com/rzane/docker2exe)** — Package Docker images into single-file executables. Ship applications as self-contained binaries that embed an OCI image and a minimal runtime.
 
 ### Databases
 
@@ -295,6 +297,7 @@ Modern frameworks and tools for building web applications.
 - **[Nest.js](https://github.com/nestjs/nest)** — Progressive Node.js framework for building efficient server-side applications. Enterprise-grade backend framework with dependency injection and modular architecture.
 - **[Fastify](https://github.com/fastify/fastify)** — Fast and low overhead web framework for Node.js. High-performance HTTP framework with built-in logging, routing, and validation.
 - **[Moleculer](https://github.com/moleculerjs/moleculer)** — Fast, modern, and powerful microservices framework for Node.js. Progressive microservices framework with built-in service discovery and load balancing.
+- **[Galaxy (Uiverse.io)](https://github.com/uiverse-io/galaxy)** — Massive open-source UI components library built by the community. Ready-to-use, copy-paste elements in CSS or Tailwind for rapid UI prototyping and production.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -406,6 +409,7 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[GPT-API-free / DeepSeek-API-free](https://github.com/gpt-api-free/gpt-api-free)** — Free API keys for AI platforms. Open-source service providing access to various AI model APIs without cost.
 - **[restorePhotos](https://github.com/Nutlope/restorePhotos)** — AI-powered photo restoration tool. Restore old and damaged photos using advanced machine learning algorithms.
 - **[Kimi-Dev-72B](https://github.com/moonshotai/Kimi-Dev-72B)** — Open-source LLM for engineering tasks. Code generation, bug detection, autonomous testing, and patching of large industrial codebases.
+- **[VibeSDK](https://github.com/cloudflare/vibesdk)** — SDK for building AI-powered, real-time interactive experiences on Cloudflare’s edge. Compose agents and multimodal interactions with low latency.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
@@ -461,6 +465,7 @@ Tools for video generation, manipulation, and analysis.
 - **[Veloren](https://github.com/veloren/veloren)** — Open-source multiplayer voxel RPG. Community-driven game with procedural world generation and cooperative gameplay.
 - **[OpenTTD](https://github.com/OpenTTD/OpenTTD)** — Open-source transportation business simulation game. Enhanced version of Transport Tycoon Deluxe with online multiplayer.
 - **[SuperTuxKart](https://github.com/supertuxkart/stk-code)** — Free 3D kart racing game. Fun racing game featuring Tux and friends with various tracks and modes.
+- **[Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)** — Real-time face swap and one-click deepfake video generation from a single image. GPU-accelerated pipeline for live streams and recordings.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
