@@ -191,6 +191,7 @@ Modern text editors optimized for productivity and extensibility.
 - **[amp](https://github.com/jmacdonald/amp)** — Vi-inspired text editor written in Rust. Minimal design with extensible plugin system.
 - **[ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)** — Chromium browser without Google integration. Enhanced privacy and security with removed Google services and telemetry.
 - **[Notepad++](https://notepad-plus-plus.org/)** — Feature-rich code and text editor for Windows. Supports all programming languages with syntax highlighting and plugins.
+- **[Void](https://github.com/voideditor/void)** — AI-native, open-source code editor built on Tauri with multi-agent workflows, checkpointing, and intuitive diff visualizations.
 
 ### Debugging
 
@@ -308,6 +309,7 @@ Modern frameworks and tools for building web applications.
 Development environments and task automation tools.
 
 - **[Cursor](https://github.com/getcursor/cursor)** — AI-powered code editor built on VS Code. Integrated AI assistant for code generation and refactoring.
+- **[go-cursor-help](https://github.com/yuaotian/go-cursor-help)** — CLI helper for refreshing Cursor sessions and clearing free-tier usage limits when the editor stops responding.
 - **[VS Code](https://github.com/microsoft/vscode)** — Extensible code editor with rich ecosystem. Built-in Git, debugging, and thousands of extensions.
 - **[code-server](https://github.com/coder/code-server)** — VS Code in the browser. Access your development environment from anywhere with a web browser.
 - **[Gitpod](https://github.com/gitpod-io/gitpod)** — Cloud development environments. Spin up ready-to-code dev environments for any GitHub, GitLab, or Bitbucket project.
@@ -330,6 +332,8 @@ Development environments and task automation tools.
 - **[Nyno](https://github.com/nyno-org/nyno)** — YAML-based workflow automation alternative to n8n. Lightweight workflow engine without cloud dependencies.
 - **[Flowcraft](https://github.com/flowcraft-io/flowcraft)** — Dependency-free automation platform. Simple and lightweight workflow automation without external dependencies.
 - **[Android Code Studio](https://github.com/AndroidCSOfficial/android-code-studio)** — Android IDE for developing full-featured Android apps on Android devices. Complete development environment with Gradle support, terminal, and AI assistant.
+- **[Figma Context MCP](https://github.com/GLips/Figma-Context-MCP)** — MCP server that streams structured Figma layout context to AI coding agents like Cursor for design-aware development.
+- **[Cursor Talk to Figma MCP](https://github.com/grab/cursor-talk-to-figma-mcp)** — MCP integration that lets Cursor read and programmatically update Figma designs via agentic workflows.
 - **[Apache APISIX](https://github.com/apache/apisix)** — High-performance API gateway for microservices. Production-ready solution with rich plugin ecosystem and enterprise support.
 - **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** — Modern, beautiful API testing client. Self-hosted alternative to Postman with intuitive interface and powerful features.
 - **[Keploy](https://github.com/keploy/keploy)** — API testing and mocking tool. Automated end-to-end testing with intelligent mock generation and replay capabilities.
@@ -478,6 +482,7 @@ Professional graphic design tools for creating images, illustrations, and visual
 - **[GIMP](https://www.gimp.org/)** — Free and open-source image editor. Professional alternative to Photoshop for photo editing, logo creation, and graphic design.
 - **[Inkscape](https://inkscape.org/)** — Professional vector graphics editor. Create scalable logos, illustrations, and print materials with precision.
 - **[Scribus](https://www.scribus.net/)** — Desktop publishing software for layout and print preparation. Create magazines, brochures, and product packaging.
+- **[Onlook](https://github.com/onlook-dev/onlook)** — AI-assisted design tool for visually creating, styling, and editing React UIs with live code synchronization.
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 
