@@ -61,3 +61,6 @@ desktop.ini
 .cache/
 .pyre_cache/
 __pypackages__/
+
+# Generated star cache
+scripts/
