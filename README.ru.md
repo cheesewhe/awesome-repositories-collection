@@ -400,6 +400,7 @@ LLM frameworks, AI agents, and machine learning tools.
 - **[fastdup](https://github.com/visual-layer/fastdup)** (⭐ 1.8k) — Find duplicates and anomalies in image datasets. Fast and efficient tool for dataset quality control and curation.
 - **[VoltAgent Inspector](https://github.com/MCPJam/inspector)** (⭐ 1.4k) — Visual inspector for MCP servers. Open-source debugging and monitoring tool for Model Context Protocol implementations.
 - **[spacy-llm](https://github.com/explosion/spacy-llm)** (⭐ 1.3k) — Integrate LLMs into spaCy NLP pipelines. Combine traditional NLP with modern language models for enhanced text processing.
+- **[Open-Source-Face-Recognition-SDK](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK)** (⭐ 253) — Open-source face recognition SDK for Windows and Linux. Face detection, landmark extraction, feature embedding, and similarity comparison with 100% on-premise processing.
 - **[vtcode](https://github.com/vinhnx/vtcode)** (⭐ 242) — Terminal AI coding agent. Intelligent code generation and assistance without leaving your terminal.
 - **[spidercreator](https://github.com/carlosplanchon/spidercreator)** (⭐ 188) — LLM-powered web scraper generator. Automatically generate web scraping scripts using natural language descriptions.
 - **[Apple On Device OpenAI](https://github.com/gety-io/apple-on-device-openai)** (⭐ 0) — OpenAI-compatible API for local Apple models. Simplifies on-device inference for Apple Silicon with OpenAI API compatibility.
