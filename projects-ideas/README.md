@@ -28,6 +28,10 @@ Each project has its own markdown file with detailed description, features, use 
 
 - **[Industrial Automation & SCADA](./industrial-automation-scada.md)** — Comprehensive collection of tools for SCADA systems, PLC programming, BIM/CAD design, point cloud processing, and engineering AI applications.
 
+### IoT & Smart Home
+
+- **[Espectre](./espectre.md)** — Wi‑Fi CSI-based presence and motion detection using commodity routers. Local-first occupancy sensing with Home Assistant integration for smart home automation.
+
 ---
 
 ## 📝 Format
