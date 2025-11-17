@@ -598,6 +598,7 @@ Learning resources, courses, and comprehensive guides for developers.
 - **[System Design Primer](https://github.com/donnemartin/system-design-primer)** (⭐ 326k) — Learn how to design large-scale systems. Comprehensive guide with diagrams and examples.
 - **[OSSU Computer Science](https://github.com/ossu/computer-science)** (⭐ 198k) — Path to free self-taught education in Computer Science. Complete degree program using online courses.
 - **[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)** (⭐ 159k) — Master the command line in one page. Practical examples for everyday use.
+- **[every-programmer-should-know](https://github.com/mtdvio/every-programmer-should-know)** (⭐ 95k) — Collection of technical things every software developer should know. Covers algorithms, data structures, distributed systems, security, architecture, and career development.
 - **[Joplin](https://github.com/laurent22/joplin)** (⭐ 52.1k) — Cross-platform note-taking application. Markdown editor with synchronization, encryption, and plugin support.
 - **[LearnGitBranching](https://github.com/pcottle/learnGitBranching)** (⭐ 32.8k) — Interactive visual Git tutorial. Master branching, merging, rebasing, and advanced Git workflows through hands-on exercises.
 - **[Overleaf](https://github.com/overleaf/overleaf)** (⭐ 16.8k) — Collaborative LaTeX editor. Real-time collaborative editing for scientific papers and documents.
