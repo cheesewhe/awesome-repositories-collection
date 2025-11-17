@@ -39,7 +39,7 @@ jobs:
           python scripts/translate_readmes_ast.py
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: sync README translations"
           branch: ${{ github.ref_name }}
