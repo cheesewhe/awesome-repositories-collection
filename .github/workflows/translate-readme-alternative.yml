@@ -4,13 +4,10 @@ name: Translate README (Alternative - action-translate-readme)
 # Этот action парсит Markdown через AST и переводит только текстовые узлы
 # Раскомментируйте этот файл и закомментируйте auto-translate-readmes.yml если хотите использовать
 
+# DISABLED: This workflow has issues with action parameters
+# Use auto-translate-readmes.yml or translate.yml instead
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'README.md'
-  workflow_dispatch:
+  workflow_dispatch:  # Only manual trigger, disabled for automatic runs
 
 jobs:
   translate:
@@ -24,29 +21,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Translate to Russian
+      - name: Translate README to multiple languages
         uses: Lin-jun-xiang/action-translate-readme@main
         with:
-          LANG: ru
-          FILE_PATH: README.md
-          TARGET_FILE_PATH: README.ru.md
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Translate to Chinese
-        uses: Lin-jun-xiang/action-translate-readme@main
-        with:
-          LANG: zh-CN
-          FILE_PATH: README.md
-          TARGET_FILE_PATH: README.zh-CN.md
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Translate to Spanish
-        uses: Lin-jun-xiang/action-translate-readme@main
-        with:
-          LANG: es
-          FILE_PATH: README.md
-          TARGET_FILE_PATH: README.es.md
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          langs: ru,zh-CN,es
       
       - name: Commit and push translations
         run: |
