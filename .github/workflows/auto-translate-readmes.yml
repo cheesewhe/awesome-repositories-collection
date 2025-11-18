@@ -7,9 +7,16 @@ on:
   push:
     branches:
       - main
+    # Убрали фильтр paths для тестирования - workflow будет запускаться при любом push
+    # Раскомментируйте paths ниже, если хотите запускать только при изменении README.md
+    # paths:
+    #   - 'README.md'
+    #   - '.github/workflows/auto-translate-readmes.yml'
+  pull_request:
+    branches:
+      - main
     paths:
       - 'README.md'
-      - '.github/workflows/auto-translate-readmes.yml'  # Trigger on workflow changes too
   workflow_dispatch:
     inputs:
       source_language:
@@ -45,8 +52,19 @@ jobs:
           echo "🔍 Workflow triggered by: ${{ github.event_name }}"
           echo "📂 Current branch: ${{ github.ref }}"
           echo "📝 Changed files in last commit:"
-          git diff --name-only HEAD~1 HEAD || echo "No previous commit"
+          git diff --name-only HEAD~1 HEAD 2>/dev/null || git diff --name-only HEAD~2 HEAD~1 2>/dev/null || echo "Checking all commits..."
           echo "📋 Event type: ${{ github.event_name }}"
+          echo "📄 README.md exists: $([ -f README.md ] && echo 'YES' || echo 'NO')"
+          
+          # Проверяем, изменился ли README.md в последнем коммите
+          if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -q "README.md"; then
+            echo "✅ README.md был изменен - продолжаем перевод"
+          elif git diff --name-only HEAD~2 HEAD~1 2>/dev/null | grep -q "README.md"; then
+            echo "✅ README.md был изменен в предыдущем коммите - продолжаем перевод"
+          else
+            echo "⚠️ README.md не был изменен в последних коммитах"
+            echo "ℹ️ Workflow все равно запустится для проверки актуальности переводов"
+          fi
           echo "✅ Workflow is running!"
       
       - name: Set up Python
@@ -109,15 +127,23 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
+          # Проверяем статус перед добавлением
+          echo "📊 Git status before adding files:"
+          git status --short
+          
           # Добавляем переведенные файлы
           git add README.ru.md README.zh-CN.md README.es.md
           
           # Проверяем, есть ли изменения
+          echo "📊 Git status after adding files:"
+          git status --short
+          
           if git diff --staged --quiet; then
             echo "✨ Нет изменений для коммита"
           else
             echo "📝 Коммит переводов..."
             git commit -m "🌍 chore: auto-update README translations [skip ci]"
+            echo "📤 Push изменений..."
             git push
             echo "✅ Переводы успешно загружены!"
           fi
