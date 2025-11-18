@@ -481,6 +481,7 @@ Tools for video generation, manipulation, and analysis.
 Professional graphic design tools for creating images, illustrations, and visual content.
 
 - **[Onlook](https://github.com/onlook-dev/onlook)** (⭐ 23.3k) — AI-assisted design tool for visually creating, styling, and editing React UIs with live code synchronization.
+- **[figma2xaml](https://github.com/igorageev/figma2xaml)** (⭐ 31) — Figma plugin for converting vector paths to XAML. Enables C# developers to export Figma designs directly to XAML code for WPF, UWP, and .NET MAUI applications.
 - **[GIMP](https://www.gimp.org/)** — Free and open-source image editor. Professional alternative to Photoshop for photo editing, logo creation, and graphic design.
 - **[Inkscape](https://inkscape.org/)** — Professional vector graphics editor. Create scalable logos, illustrations, and print materials with precision.
 - **[Scribus](https://www.scribus.net/)** — Desktop publishing software for layout and print preparation. Create magazines, brochures, and product packaging.
