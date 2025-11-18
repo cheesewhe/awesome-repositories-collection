@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - 'README.md'
+      - '.github/workflows/auto-translate-readmes.yml'  # Trigger on workflow changes too
   workflow_dispatch:
     inputs:
       source_language:
@@ -38,6 +39,15 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Debug workflow trigger
+        run: |
+          echo "🔍 Workflow triggered by: ${{ github.event_name }}"
+          echo "📂 Current branch: ${{ github.ref }}"
+          echo "📝 Changed files in last commit:"
+          git diff --name-only HEAD~1 HEAD || echo "No previous commit"
+          echo "📋 Event type: ${{ github.event_name }}"
+          echo "✅ Workflow is running!"
       
       - name: Set up Python
         uses: actions/setup-python@v6
