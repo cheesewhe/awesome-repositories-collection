@@ -1,671 +1,688 @@
-# 超级仓库收藏
+# 🚀 Awesome Repositories Collection ⚡
 
 <p align="center">
 
-  > - 英语;
+  > 🇬🇧 English • 🇷🇺 Русский • 🇨🇳 简体中文
 
-> [Awesome](https://awesome.re/badge.svg),[License](https://img.shields.io/github/license/cheesewhe/awesome-repositories-collection),XC[Stars](https://img.shields.io/github/stars/cheesewhe/awesome-repositories-collection)0D (英语).
+> ![Awesome](https://awesome.re/badge.svg) ![License](https://img.shields.io/github/license/cheesewhe/awesome-repositories-collection) ![Stars](https://img.shields.io/github/stars/cheesewhe/awesome-repositories-collection)
 
 </p>
 
 ---
 
-## * 概览
+## 📖 Overview
 
-为开发者、系统管理员和研究人员精心整理的多语种基本工具、公用事业和技术资源汇编。
+A carefully curated multilingual collection of essential tools, utilities, and technical resources for developers, system administrators, and researchers.
 
-该数据库汇集了经过战斗测试的开放源码项目,涉及**发展工具**、**AI/ML**、**系统监测**、**安全**、**集装箱化**和**自动化**。 每个工具都是根据主动维护、清晰的文档和现实世界的适用性来选择的。
+This repository brings together battle-tested open-source projects spanning **development tools**, **AI/ML**, **system monitoring**, **security**, **containerization**, and **automation**. Each tool is selected based on active maintenance, clear documentation, and real-world applicability.
 
-### * 仓库统计
+### 📊 Repository Statistics
 
-- **411+** 管理的工具和资源
-- **21** 主要类别
-- ** 语文翻译(英文、俄文、中文、西班牙文)
-- ** 100QQ 开源工具
-
----
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
-
-## 目录
-
-- XC[File Navigation](#-file-navigation)0D 时
-- XC[Search & Replace](#-search--replace)0D 时
-- XC[System Monitoring](#-system-monitoring)0D 时
-- XC[Networking](#-networking)0D 时
-- XC[Development Tools](#-development-tools)0D 时
-  - XC[Git Tools](#git-tools)0D 时
-  - XC[Code Editors](#code-editors)0D 时
-  - XC[Debugging](#debugging)0D 时
-  - XC[Performance](#performance)0D 时
-- XC[Docker & Cloud](#-docker--cloud)0D 时
-  - XC[Databases](#databases)0D 时
-  - XC[Web Development](#web-development)0D 时
-- XC[IDE & Automation](#-ide--automation)0D 时
-  - XC[Business & Enterprise](#business--enterprise)0D 时
-- XC[AI & Machine Learning](#-ai--machine-learning)0D 时
-- XC[CI/CD](#-cicd)0D 时
-- XC[Video Processing](#-video-processing)0D 时
-- XC[Design & Graphics](#-design--graphics)0D 时
-- XC[3D Vision & Scanning](#-3d-vision--scanning)0D 时
-- XC[Industrial Automation & SCADA](#-industrial-automation--scada)0D 时
-- XC[CAD & BIM Design](#-cad--bim-design)0D 时
-- XC[Security & OSINT](#-security--osint)0D 时
-- XC[Education](#-education)0D 时
-- XC[Geographic Information Systems](#geographic-information-systems)0D 时
-- XC[Research & Theses](#-research--theses)0D 时
-- XC[Project Ideas](#project-ideas-collection)0D 时
-- XC[Awesomes](#-awesomes)0D 时
-- XC[Contributors](#-contributors)0D 时
-- XC[Contributing](#-contributing)0D 时
+- **411+** curated tools and resources
+- **21** main categories
+- **4** language translations (English, Russian, Chinese, Spanish)
+- **100%** open-source tools
 
 ---
 
-## QQ 文件导航
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
-高效探索和导航您文件系统的基本工具 。
+## 📋 Table of Contents
 
-- QQC000D** (QQ75k)- 有互动接口的指令行模糊查找器. 与外壳历史,文件搜索,和Vim/neovim无缝地融合来进行闪电快导航.
-- QQC000D** (XQ 55.8k) ——以语法突出,git相集为主的猫克隆,并自动呼出. 在终端中快速查看代码文件的完美.
-- QQC000D** (QQ 40.5k) – `find` 的简单,快捷,方便用户的替代品. 支持并行执行,忽略模式,以及智能案件敏感性.
-- QQC000D** (QQ 28.2k) – 有注释功能的强大截图工具. 抓取,注释,并与内置图像编辑器共享截图.
-- QQC000D** (QQ 24.2k) – 现代用 git 集成,树视图,和色码文件类型来替换`ls`,用于增强可读性.
-- QQC000D** (XQ 16.6k) ——Vi受启发的文件管理器有三栏布局,文件预览,以及广泛的定制选项.
-- **X C000D** (⭐ 15.1k)-下一代 `ls` 有图标、 颜色和树视图的命令 。 写在"Rust"中,用于放火表演.
-- QQC000D** (XQ10.7k) – 有可搜索历史的高级剪贴板管理器. 存储并组织有标签、注释和脚本支持的剪贴板条目。
-- QQC000D** (QQ 2.9k) – 桌面最小化和快速图像取景器. 有键盘导航的轻量级,支持所有主要图像格式.
-- QQC000D** (QQ 2k) – 具有集成控制台和编辑器的网络文件管理器. 通过浏览器界面远程访问和管理文件.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
-
----
-
-## 搜索和替换
-
-通过代码库搜索和进行批量文本操作的强大工具.
-
-- QQC000D** (QQ 57.2k) – 默认尊重.gitignore的超快递归搜索工具. 大于大型密码库上的grep,ag等替代品.
-- QQC000D** (QQ 27.1k) – 为开发者优化了代码搜索工具. 速度快于 ack,有忽略 VCS 目录的智能默认.
-- QQC000D** (XQ 11.1k) — 结构代码搜索和重构工具. 由AST模式来搜索代码,而不是regex,以获取更精确的结果.
-- QQC000D** (XQ 6.7k) – 有regex支持的直观发现和替换CLI工具. 日常使用比`sed`更安全,更能进行基因组研究.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
-
----
-
-## * 系统监测
-
-实时跟踪系统资源、流程和业绩计量。
-
-- QQC000D** (XQ126k) — 电力用户的Windows公用事业. 以快捷键,取色器等工具来扩展Windows功能.
-- QQC000D** (XQ82.5k)-开源自来自来自动化平台. 具有设备控制,自动化,并广泛集成生态系统的智能家园枢纽.
-- QQC000D** (QQ76.7k)——系统和应用的实时性能监测. 分布,实时,健康监测和性能故障排除.
-- QQC000D** (QQ 52.2k) – 迷你主义者跨壳快取. 快速且可自定义的任意 shell 包含 git 状态、 任务和目录信息 。
-- QQC000D** (QQ 42.4k) – 应用程序监测和错误跟踪. 开源错误跟踪帮助开发者实时监控并修复崩溃.
-- QQC000D** (QQ 33.4k)——以隐私为重点的网络分析. 与GDPR兼容的Google Analytics自行托管替代.
-- QQC000D** (QQ 30.5k)——用Python书写的跨平台监测工具. 将数据导出到各种格式,并支持客户端-服务器模式.
-- QQC000D** (XQ 28.2k) —— 资源显示器带有美丽的UI显示CPU,内存,磁盘,网络,和进程信息. 现代C++执行主题.
-- QQC000D** (XQ 26.9k) ——由普罗米修斯所启发的日志汇总系统. 高效地储存和查询用于集中伐木的Grafana集成。
-- QQC000D** (QQ 24.3k)-开源APM与可观察性平台. 完全的可观察性 有木头 度量衡 以及玻璃片的痕迹
-- QQC000D** (QQ 22.4k) – 声明式Linux发行有可再生建筑. 纯功能性包管理器,具有原子升级和回滚等功能.
-- QQC000D** (XQ 21.4k) — Windows 的即时文件预览. 按空间栏预览文件而不打开应用程序 。
-- QQC000D** (QQ 17.3k) – 集装箱度量衡的顶等接口. 实时监视多克容器,并配备资源使用统计数据。
-- QQC000D** (XQ 15.3k)——快速,高成本效益的监测解决方案和时间序列数据库. 为Prometheus长期远程存储,具有高性能和可伸缩性.
-- QQC000D** (QQ 12.2k) ——由gtop和gotop所启发的图形过程/系统显示器. 有跨平台支持的自定义部件 。
-- QQC000D** (XQ 9.6k)——克龙工作监督服务. 计划任务失败或不能及时运行时获得提醒.
-- QQC000D** (QQ 7.6k) – Unix系统的互动进程查看器. 用鼠标支持并自定义列的颜色编码显示 。
-- • 基础设施监测和杀伤人员地雷分析。 找出性能瓶颈,优化应用交付.
-- QQC000D** (QQ 3.9k) ——分布式追踪和APM工具. 开源APM和可兼容OpenTeleometter的分布式追踪解决方案.
-- QQC000D** (XQ 1. 1k) – CPU,GPU,和NPU的系统资源显示器. 显示详细硬件利用率的轻量级工具.
-- QQC000D** (QQ 560) —— 服务器使用自定义度量衡进行监控. 实时性能跟踪,并配有可配置的警报和仪表板.
-- QQC000D** (XQ 1) – 个人隐私和匿名的便携式操作系统. 用失忆症特征通过Tor的所有通信的直播系统.
-- QQC000D** (QQ0)——轻量级和灵活的Linux分布. 滚动发布模式,包含广泛的包管理和定制选项.
-- QQC000D** (QQ0)-开源轻量级视窗优化. 自定义的Windows发行侧重于性能和最小化.
-- QQC000D** (QQ0)-以安全为重点的桌面操作系统. 基于Xen的OS,使用虚拟化将系统的不同部分隔离,以加强安全.
-- QQC000D** (⭐0)-基于Tor和Debian的匿名操作系统. 完整的匿名套房,具有综合Tor网络和安全功能.
-- QQC000D** — NCurses基于磁盘使用分析器. 用直观界面快速找到消耗磁盘空间的东西.
-
-### 地理信息系统
-
-地理空间数据分析和绘图工具。
-
-- QQC000D** (QQ0)——自办DevOps平台,CI/CD和基础设施监测. 在一个平台上完成 DevOps 解决方案 。
-- QQC000D** (QQ0)——3D打印切口软件. 以高级切换算法编写打印的3D模型.
-- QQC000D** — 地理信息系统. 地理空间数据分析、制图和空间数据管理专业地理信息系统软件。
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+- [File Navigation](#-file-navigation)
+- [Search & Replace](#-search--replace)
+- [System Monitoring](#-system-monitoring)
+- [Networking](#-networking)
+- [Development Tools](#-development-tools)
+  - [Git Tools](#git-tools)
+  - [Code Editors](#code-editors)
+  - [Debugging](#debugging)
+  - [Performance](#performance)
+- [Docker & Cloud](#-docker--cloud)
+  - [Databases](#databases)
+  - [Web Development](#web-development)
+- [IDE & Automation](#-ide--automation)
+  - [Business & Enterprise](#business--enterprise)
+- [AI & Machine Learning](#-ai--machine-learning)
+- [CI/CD](#-cicd)
+- [Video Processing](#-video-processing)
+- [Design & Graphics](#-design--graphics)
+- [3D Vision & Scanning](#-3d-vision--scanning)
+- [Industrial Automation & SCADA](#-industrial-automation--scada)
+- [CAD & BIM Design](#-cad--bim-design)
+- [Security & OSINT](#-security--osint)
+- [Education](#-education)
+- [Geographic Information Systems](#geographic-information-systems)
+- [Research & Theses](#-research--theses)
+- [Project Ideas](#project-ideas-collection)
+- [Repository Tags](#-repository-tags)
+- [Awesomes](#-awesomes)
+- [Contributors](#-contributors)
+- [Contributing](#-contributing)
 
 ---
 
-## * 联网
+## 📂 File Navigation
 
-测试API,调试网络流量,管理连接的工具.
+Essential tools for exploring and navigating your filesystem efficiently.
 
-- QQC000D** (XQ102k)-开源远程桌面软件. 自主托管AnyDesk替代远程访问和支持。
-- QQC000D** (QQ70.1k) – 本地网络安全文件共享. 在没有云或互联网的设备之间加密文件传输 。
-- QQC000D** (QQ 54.2k) ——通过自有的Linux硬件来屏蔽全网络的广告. 自我托管的DNS下沉孔,在网络一级屏蔽广告和跟踪器.
-- QQC000D** (QQ 41.2k) – 交互式HTTPS代理用于穿透测试者和开发者. 检查,修改,并重放HTTP/HTTPS流量.
-- QQC000D** (XQ 38.6k) – API客户端用于测试REST,GraphQL,和SOAP API. 轻量级替代Postman和Insomnia,具有线下第一架构.
-- QQC000D** (QQ 37k) – 方便用户的HTTP客户端用于测试API. 带有语法加亮和JSON支持的表达式语法出框.
-- QQC000D** (XQ26k)-开源客户接触平台. 多个频道所有客户对话的统一收件箱.
-- QQC000D** (QQ 24.4k) —— 反向代理创建安全地道到本地主机. 用于测试和揭露当地服务。
-- QQC000D** (XQ 11.3k)——终端带宽利用工具. 按进程、连接和远程IP显示当前网络使用情况。
-- QQC000D** (QQ 7.7k)——网络工具包有WiFi分析器,端口扫描仪,RDP/SSH管理. Windows的专业网络管理工具.
-- QQC000D** (XQ 6.5k) – 有彩色输出和支持DNS-over-HTTPS的现代DNS客户端. 更好的替代`dig`,输出更清晰.
-- QQC000D** (QQ 3.5k) – 现代卷曲与相类似 httpie 接口. 将卷曲的力量与httpie方便用户的语法结合.
-- QQC000D** (QQ 2. 3k) – 任何应用程序的透明TCP代理. 不修改应用程序代码或配置而重新定向 TCP 连接.
-- QQC000D** (XQ 1.3k) ——Wi‐Fi CSI基于商品路由器的存在/运动检测. 本地第一入住感知与家庭助理融合.
-- QQC000D** (⭐0)——P2P视频会通过WebRTC. Zoom和Google的简单而快的替代方案以对等连接相遇.
-- QQC000D** (QQ0)——API的装入测试和集成测试工具. 具有自动测试能力的Postman的简化替代品.
-- QQC000D** (QQ0) – 端到端加密文件通过网络或CLI传输. 在没有中介服务器的情况下,实现对等文件共享。
-- QQC000D** — 文件传输的轻量级FTP客户端. 将文件上传到服务器并直接在远程服务器上编辑代码.
-- QQC000D** — 调试流量的网络协议分析器. 用于网络故障解析,分析和协议开发的开源工具.
-- QQC000D** — Mesh VPN 免费开源客户端和自宿. 0配置VPN用于在设备之间创建安全网络.
-- QQC000D** — Postman免费开源版本用于API测试. 具备自动测试能力的完整API开发环境.
+- **[fzf](https://github.com/junegunn/fzf)** (⭐ 75k) — Command-line fuzzy finder with interactive interface. Integrates seamlessly with shell history, file search, and vim/neovim for lightning-fast navigation.
+- **[bat](https://github.com/sharkdp/bat)** (⭐ 55.8k) — Cat clone with syntax highlighting, git integration, and automatic paging. Perfect for quickly viewing code files in the terminal.
+- **[fd](https://github.com/sharkdp/fd)** (⭐ 40.5k) — Simple, fast, and user-friendly alternative to `find`. Supports parallel execution, ignore patterns, and smart case sensitivity.
+- **[Flameshot](https://github.com/flameshot-org/flameshot)** (⭐ 28.2k) — Powerful screenshot tool with annotation capabilities. Capture, annotate, and share screenshots with built-in image editor.
+- **[exa](https://github.com/ogham/exa)** (⭐ 24.2k) — Modern replacement for `ls` with git integration, tree view, and color-coded file types for enhanced readability.
+- **[ranger](https://github.com/ranger/ranger)** (⭐ 16.6k) — Vi-inspired file manager with three-column layout, file previews, and extensive customization options.
+- **[lsd](https://github.com/lsd-rs/lsd)** (⭐ 15.1k) — Next-generation `ls` command with icons, colors, and tree view. Written in Rust for blazing performance.
+- **[CopyQ](https://github.com/hluk/CopyQ)** (⭐ 10.7k) — Advanced clipboard manager with searchable history. Store and organize clipboard entries with tags, notes, and scripting support.
+- **[qView](https://github.com/jurplel/qView)** (⭐ 2.9k) — Minimalist and fast image viewer for desktop. Lightweight with keyboard navigation, supports all major image formats.
+- **[cloudcmd](https://github.com/coderaiser/cloudcmd)** (⭐ 2k) — Web-based file manager with integrated console and editor. Access and manage files remotely through a browser interface.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## 开发工具
+## 🔍 Search & Replace
 
-### Git 工具
+Powerful tools for searching through codebases and performing bulk text operations.
 
-版本控制功能可以增强您的 Git 工作流程 。
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** (⭐ 57.2k) — Ultra-fast recursive search tool that respects .gitignore by default. Outperforms grep, ag, and other alternatives on large codebases.
+- **[ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher)** (⭐ 27.1k) — Code-searching tool optimized for developers. Faster than ack, with smart defaults for ignoring VCS directories.
+- **[ast-grep](https://github.com/ast-grep/ast-grep)** (⭐ 11.1k) — Structural code search and refactoring tool. Search code by AST patterns instead of regex for more precise results.
+- **[sd](https://github.com/chmln/sd)** (⭐ 6.7k) — Intuitive find-and-replace CLI tool with regex support. Safer and more ergonomic than `sed` for everyday use.
 
-- QQC000D** (XQ67.8k) – Git命令的简单终端UI. 相接阶段,管理分支,并解决与键盘驱动界面的冲突.
-- QQC000D** (QQ 41.3k)-GitHub官方命令行工具. 在不离开终端的情况下创建问题,拉动请求并管理寄存器.
-- QQC000D** (⭐ 28.1k) — git, diff, and grep 输出的语法高亮调呼器. 使代码审查与相邻的diffs更为愉快.
-- QQC000D**(QQ17.9k)——收集有用的公用设施,包括摘要、努力、更改日志等。
-- QQC000D** (QQ 13k) — Git 的文本-mode接口. 在终端中浏览寄存器历史,责备视图和树导航.
-- QQC000D** (QQ 2. 1k) – GitLab CLI 工具,用于管理问题,合并请求,以及直接从命令行发出的管道.
-- QQC000D** (QQ0)-快开源链接器用Rust写出. 高性能链接器,用于优化构建时间并减少二进制大小.
-
-### 代码编辑器
-
-现代文本编辑器为生产力和可扩展性进行了优化.
-
-- QQC000D** (XQ94.2k) – 超可扩展可见文本编辑器. 内建LSP支持,Lua配置,和现代插件生态系统.
-- QQC000D** (QQ 41.2k) ——后现代文本编辑器有内置LSP,树保姆等多种选择. 框外不需要配置 。
-- QQC000D** (QQ 27.5k)——由多代理工作流程,检查,直观的diff可视化而建于陶里之上的AI-native,开源代码编辑器.
-- QQC000D** (QQ 27.2k) — 现代和直观的终端文本编辑器. 支持鼠标输入和常见密钥绑定(Ctrl+C,Ctrl+V).
-- QQC000D** (QQ 24.7k) – Chromium浏览器没有Google集成. 通过取消谷歌服务和遥测,加强了隐私和安全。
-- QQC000D** (QQ 4k) ——由Vi-Inspirted文本编辑器用Rust所写. 有可扩展插件系统的最小设计 。
-- QQC000D** — Windows 的功能丰富的代码和文本编辑器. 支持所有带有语法加亮和插件的编程语言.
-
-### 调试
-
-用于诊断和解决应用程序中问题的工具。
-
-- QQC000D** (QQ 57.8k) – 有离线支持的强力图编辑器. 创建流程图, UML 图表, 网络地貌等等 。
-- QQC000D** (QQ 42.4k) – 交互式JSON结构可视化器. 探索复杂JSON数据结构的美丽而直观的工具.
-- QQC000D** (QQ 34.8k) — 具有自动SQL生成的数据库图. 具有前向和倒向工程的视觉数据库设计工具.
-- QQC000D**(QQ 31.8k)——神经网络和ML模型的可视化器. 以交互方式查看模型架构,层层细节,并查看权重.
-- QQC000D** (QQ 24.4k) – 为Go编程语言调试. 支持goroutines,频道,和Go特定调试功能.
-- QQC000D** (QQ 22.6k)-专业级光栅和矢量图形编辑器. 现代设计工具有无限的画布和强大的编辑能力.
-- QQC000D** (XQ 3k)-基于SQLite的终端笔记本. 有命令行界面和本地存储的简单记事系统.
-- QQC000D** (XQ 1.4k) – Async CRUD操作为有自动JOINs的FastAPI. 简化数据库操作,自动处理关系.
-- QQC000D** (XQ 1.4k) – 增强Python调试器有语法加亮,分标签补全等功能,并有更好的内向.
-- QQC000D** (QQ458)——任何申请的语音口音. 跨越不同程序和平台的通用语音输入工具.
-- QQC000D** (QQ210) — CLI 二进制管理器通过点文件. 在您点文件库中管理和版本控制命令行工具 。
-- QQC000D** (XQ198) — 快取 HTML 到 PDF 转换器. 从 HTML 内容生成 PDF 文件的高性能工具。
-- QQC000D** (QQ0)-基于文本的克龙工作管理仪表板. 从简单的界面来监测和管理预定的任务.
-- QQC000D** (QQ0)- 有可变支持和图形可视化的Markdown编辑器. 技术写作和文件高级文本编辑器。
-- QQC000D** (QQ0)- 有视觉连接的本地便条收录应用. 创建链接的注释, 以图视图显示条目之间的关系 。
-- QQC000D** (⭐0)-跨平台包管理器从GitHub直接拉出放出. 开源项目简单依赖管理.
-- QQC000D** (QQ0) — 有搜索和vim模式的高级便条编辑器. 强力打分-以语法为主的记事记事.
-- QQC000D** — C, C++ 和其他语言的GNU调试器. 工业标准调试器具有强大的脚本能力.
-- QQC000D** — LLVM项目的下一代调试器. 对调试C,C++,目标-C,和斯威夫特都非常出色.
-- QQC000D** — Pascal和Object Pascal的跨平台 IDE. 带有视觉组件库的Delphi免费替代品.
-- QQC000D** — 免费开放源码办公套房. 与 Writer, Calc, Impress 等一起完成Microsoft Office 的替代品.
-- QQC000D** — GUI开发的跨平台应用框架. 写作一次,部署在除电能之外的其他地方,有本土的表演.
-
-### 业绩
-
-优化基准和特征分析工具。
-
-- QQC000D** (XQ 26.7k)——有统计分析的指令行基准工具. 暖上运行,参数化基准,并导出到各种格式.
-- QQC000D** (QQ 18.9k) — 用于性能剖面的堆积跟踪可视化器. 识别CPU密集应用中的热点.
-- QQC000D** (XQ 1.5k) — Linux 带有 GUI 的磁盘基准工具. 测量存储设备的读取/写入速度和I/O性能.
-- QQC000D** — 构建动态分析工具的仪器框架. 检测内存泄漏,种族条件和缓存缺失.
-- QQC000D** — Linux 剖析工具并带有性能计数器. 分析 CPU 循环、 缓存缺失和硬件事件 。
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## 鼠标和云
+## 📊 System Monitoring
 
-集装箱管理和云存储解决方案.
+Track system resources, processes, and performance metrics in real-time.
 
-- QQC000D** (QQ77.5k) ——连续文件同步程序. P2P同步无云中介.
-- QQC000D** (QQ 58.1k) — 高性能, S3相容对象存储. 具有企业特色的AWS S3的自备替代品.
-- QQC000D** (XQ57.7k)-现代倒置代理和负载平衡器. 自动服务发现,让我们加密支持,和中间软件系统.
-- QQC000D** (QQ 53.5k) — 命令行程序,用于同步文件及目录到和从云存储. 支持40+云供养.
-- QQC000D** (QQ 47.5k) —— Docker和Docker Compose的终端UI. 管理容器,查看日志,检查图像,并以键盘快捷键重启服务.
-- QQC000D** (XQ 36.5k) — 用于定义和运行多容器多克应用程序的工具. 基于YAML的可再生环境配置.
-- QQC000D** (QQ 35.2k) — 轻量级集装箱管理 UI. Docker,Kubernetes和Swarm的网络界面.
-- QQC000D** (QQ33.3k)——自办文件同步与协作平台. 完全替代 Google 工作空间, 带有日历、 联系人等等 。
-- QQC000D** (QQ 31.8k) – 库贝内特斯集群的终端UI. 监视资源,查看日志,执行命令时不记住kubectl语法.
-- QQC000D** (QQ 25.6k)——自办网络档案. 通过全文搜索下载并保存网站供下线取景.
-- QQC000D** (XQ 19.2k) — 更快地在Kubernetes上下文和命名空间之间切换.
-- QQC000D** (XQ 11.5k) — 快速而安全的备份工具. 跨平台备份解决方案有分解和加密.
-- QQC000D** (XQ 10.2k) —— Docker容器实时日志查看器. 有过滤和搜索能力的简单网络用户界面。
-- QQC000D** (QQ 8.6k)——由"红帽"出品的企业库伯内特斯平台. 生产备案集装箱平台有开发商工具和自动化操作.
-- QQC000D** (XQ 1.9k) – 包多克图像为单文件可执行文件. 船舶作为自成一体的二进制应用,嵌入了OCI图像和最小运行时间.
-- QQC000D** (XQ 1. 3k) – 在多克容器中运行Android x86/ARM. 由硬件加速支持的全Android系统模拟.
-- QQC000D** (XQ 1. 3k) – JDownloader 2 装入有网络图形用户界面的多克容器. 支持许多文件托管服务的自动文件下载器.
-- QQC000D** (QQ0) – S3相容对象存储以Rust所写. 快速高效地自行托管存储解决方案.
-- QQC000D** (XQ0)-企业库伯内特斯管理平台. 大规模部署、管理和保障Kubernetes集群的完整解决方案。
-- QQC000D** — Docker的官方Windows基础图像. 使用 Docker 桌面或 Windows 容器在容器中运行 Windows 应用程序.
+- **[PowerToys](https://github.com/microsoft/PowerToys)** (⭐ 126k) — Windows utilities for power users. Collection of tools to extend Windows functionality with shortcuts, color picker, and more.
+- **[Home Assistant](https://github.com/home-assistant/core)** (⭐ 82.5k) — Open-source home automation platform. Smart home hub with device control, automation, and extensive integration ecosystem.
+- **[Netdata](https://github.com/netdata/netdata)** (⭐ 76.7k) — Real-time performance monitoring for systems and applications. Distributed, real-time, health monitoring and performance troubleshooting.
+- **[starship](https://github.com/starship/starship)** (⭐ 52.2k) — Minimalist cross-shell prompt. Fast and customizable prompt for any shell with git status, jobs, and directory info.
+- **[Sentry](https://github.com/getsentry/sentry)** (⭐ 42.4k) — Application monitoring and error tracking. Open-source error tracking that helps developers monitor and fix crashes in real time.
+- **[Umami](https://github.com/umami-software/umami)** (⭐ 33.4k) — Privacy-focused web analytics. Self-hosted alternative to Google Analytics with GDPR compliance.
+- **[glances](https://github.com/nicolargo/glances)** (⭐ 30.5k) — Cross-platform monitoring tool written in Python. Exports data to various formats and supports client-server mode.
+- **[btop](https://github.com/aristocratos/btop)** (⭐ 28.2k) — Resource monitor with beautiful UI showing CPU, memory, disk, network, and process information. Modern C++ implementation with themes.
+- **[Grafana Loki](https://github.com/grafana/loki)** (⭐ 26.9k) — Log aggregation system inspired by Prometheus. Highly efficient log storage and querying with Grafana integration for centralized logging.
+- **[Signoz](https://github.com/SigNoz/signoz)** (⭐ 24.3k) — Open-source APM and observability platform. Full-stack observability with logs, metrics, and traces in a single pane of glass.
+- **[NixOS](https://github.com/NixOS/nixpkgs)** (⭐ 22.4k) — Declarative Linux distribution with reproducible builds. Purely functional package manager with atomic upgrades and rollbacks.
+- **[Quick Look](https://github.com/QL-Win/QuickLook)** (⭐ 21.4k) — Instant file preview for Windows. Press spacebar to preview files without opening applications.
+- **[ctop](https://github.com/bcicen/ctop)** (⭐ 17.3k) — Top-like interface for container metrics. Monitor Docker containers in real-time with resource usage stats.
+- **[VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics)** (⭐ 15.3k) — Fast, cost-effective monitoring solution and time series database. Long-term remote storage for Prometheus with high performance and scalability.
+- **[bottom](https://github.com/ClementTsang/bottom)** (⭐ 12.2k) — Graphical process/system monitor inspired by gtop and gotop. Customizable widgets with cross-platform support.
+- **[Healthchecks](https://github.com/healthchecks/healthchecks)** (⭐ 9.6k) — Cron job monitoring service. Get alerts when scheduled tasks fail or don't run on time.
+- **[htop](https://github.com/htop-dev/htop)** (⭐ 7.6k) — Interactive process viewer for Unix systems. Color-coded display with mouse support and customizable columns.
+- **[coroot](https://github.com/coroot/coroot)** (⭐ 7.2k) — Infrastructure monitoring and APM analysis. Identify performance bottlenecks and optimize application delivery.
+- **[Uptrace](https://github.com/uptrace/uptrace)** (⭐ 3.9k) — Distributed tracing and APM tool. Open-source APM and distributed tracing solution compatible with OpenTelemetry.
+- **[resources](https://github.com/nokyan/resources)** (⭐ 1.1k) — System resource monitor for CPU, GPU, and NPU. Lightweight tool showing detailed hardware utilization.
+- **[Performa](https://github.com/jhuckaby/Performa)** (⭐ 560) — Server monitoring with custom metrics. Real-time performance tracking with configurable alerts and dashboards.
+- **[Tails](https://github.com/tails-project/tails)** (⭐ 1) — Portable operating system for privacy and anonymity. Live system that routes all communications through Tor with amnesia feature.
+- **[Arch Linux](https://github.com/archlinux/archlinux)** (⭐ 0) — Lightweight and flexible Linux distribution. Rolling release model with extensive package management and customization options.
+- **[Atlas OS](https://github.com/AtlasOS/Atlas)** (⭐ 0) — Open-source lightweight Windows optimization. Custom Windows distribution focused on performance and minimalism.
+- **[Qubes OS](https://github.com/QubesOS/qubes-os)** (⭐ 0) — Security-focused desktop operating system. Xen-based OS that uses virtualization to isolate different parts of the system for enhanced security.
+- **[Whonix](https://github.com/Whonix/Whonix)** (⭐ 0) — Anonymous operating system based on Tor and Debian. Complete anonymity suite with integrated Tor networking and security features.
+- **[ncdu](https://dev.yorhel.nl/ncdu)** — NCurses-based disk usage analyzer. Quickly find what's consuming disk space with an intuitive interface.
 
-### 数据库
+### Geographic Information Systems
 
-高性能数据库系统和管理工具,供各种案件使用。
+Tools for geospatial data analysis and mapping.
 
-- QQC000D** (XQ92.5k) — 开源火地替代. 完成后端即时服务平台的实时订阅,认证,并存储.
-- QQC000D**(QQ 53.5k)-后端一站台. 自动托管的网络和移动应用程序建设解决方案,包括认证、数据库和存储。
-- QQC000D** (QQ 52.6k) — 一个文件中的开源后端. 轻量级替代Firebase,具有实时订阅和文件存储功能.
-- QQC000D** (QQ 46.7k) – 通用数据库工具支持100+数据库类型. SQL编辑器,ER图表,数据可视化,以及MySQL,PostgreSQL,MongoDB等的查询执行.
-- QQC000D** (XQ44k)——面向列的实时分析数据库. 使用SQL接口的大型数据集极快地查询.
-- QQC000D** (QQ 20.8k) – 数据管道的工作流程管弦框架. 构建、调度和监测数据工作流程的现代解决方案。
-- QQC000D** (QQ 20k)——ELT输油管的数据集成平台. 建设数据仓库和分析系统的开源解决方案.
-- QQC000D** (QQ 15.4k) — 连接数据的原生图表数据库. 高性能数据库被优化用于图表数据结构和复杂的关系查询.
-- QQC000D** (QQ 14.4k)——机器学习的数据管弦乐平台. 建立、测试和监测ML管道和数据工作流程的框架。
-- QQC000D** (QQ 14k)——多模型数据库支持图表,文档,和密钥值. 具有灵活数据建模能力的统一数据库.
-- QQC000D** (XQ 11.8k)-分析工程的数据转换工具. 基于SQL的通过测试和文件转换仓库数据的框架。
-- QQC000D** (XQ 9.7k) ——与MySQL兼容的分布式SQL数据库. 具有高可用性和可扩展性的企业级数据库。
-- QQC000D** (QQ0)——具有即时分支管理的高级PostgreSQL管理面板. 想象、管理和分解你的数据库计划 毫不费力
-- QQC000D** — 大数据开放表格式. Google的高性能格式用于与ACID交易的大型分析数据集.
-- QQC000D** — 数据自由和开源搜索引擎. 分布式、REST式搜索和分析引擎,能够处理越来越多的使用案例。
+- **[Gisia](https://github.com/gisia-io/gisia)** (⭐ 0) — Self-hosted DevOps platform with CI/CD and infrastructure monitoring. Complete DevOps solution in one platform.
+- **[Lychee Slicer](https://github.com/LycheeSlicer/LycheeSlicer)** (⭐ 0) — 3D printing slicer software. Prepare 3D models for printing with advanced slicing algorithms.
+- **[QGIS](https://www.qgis.org/)** — Geographic Information System. Professional GIS software for geospatial data analysis, cartography, and spatial data management.
 
-### 网络开发
-
-构建网络应用的现代框架和工具.
-
-- QQC000D** (XQ136k)-生产反应框架. 带有服务器侧渲染,静态站点生成,API路由的全存储网络框架.
-- QQC000D** (XQ105k) — JavaScript 和 TypeScript 的安全运行时间. 内建安全,现代网络API,以及一等的TypeScript支持不配置.
-- QQC000D** (⭐ 98.8k) – 以网络技术构建桌面应用程序的框架. 比Electron更小的二进制,更好的安全,以及本土的性能.
-- QQC000D** (QQ 84.8k)-网易增强网络框架. 写出更少的代码,用反应性组件架构来构建更小的捆绑.
-- QQC000D** (XQ 82.1k) ——快通JavaScript运行时间,捆接器,以及包管理器. 用本地的TypeScript支持并放出速度来替换Node.js.
-- QQC000D**(QQ73.4k)——用于构建高效服务器侧应用的渐进节点.js框架. 企业级后端框架有依赖性注入和模块化架构.
-- QQC000D** (XQ35k) – 为Node.js提供快而低的间接费用网络框架. 高性能的HTTP框架具有内置记录,路由,以及验证功能.
-- QQC000D** (QQ 33.2k) – 快速,磁盘空间高效包管理器. 在与npm保持相容性的同时,使用硬链接和同义链接来保存磁盘空间.
-- QQC000D** (QQ 24.7k) — 为网络提供强大的3D引擎. 在 WebGL 和 WebGPU 支持的浏览器中创建惊人的 三维体验 。
-- QQC000D** (QQ 14.4k) — 三维地球和网络地图. 高性能地理空间可视化与相片现实化渲染.
-- QQC000D** (QQ 7.2k)-由社区所建的大规模开源UI组件库. 在CSS或Tailwind中准备使用,复制-粘贴元素,用于快速UI原型和生产.
-- QQC000D** (XQ 6.3k) – 为Node.js提供快活,现代和强大的微服务框架. 具有内置服务发现和负载平衡的渐进式微观服务框架.
-- QQC000D**-跨平台UI框架打造美丽本土应用. Google的开源SDK用于从一个单一代码库来构建移动,网络,和桌面应用程序.
-- QQC000D**-现代单页应用的开源框架. Google综合平台用TypeScript构建可扩展网络应用程序.
-- QQC000D** — Fluter 模型的代码生成包. 在达特生成数据类和联盟类型的开源工具.
-- QQC000D** — R编程的网络刮切库. 用于自动化网络数据提取和浏览器自动化的开源软件包.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## & 自动化
+## 🌐 Networking
 
-开发环境和任务自动化工具.
+Tools for testing APIs, debugging network traffic, and managing connections.
 
-- QQC000D** (QQ178k)——具有丰富生态系统的可扩展代码编辑器. 建入吉特,调试出行,并有上千个扩建.
-- QQC000D** (QQ156k) – 工作流程自动化工具有可视化编辑器. 以200+集成方式自行托管Zapier的替代品.
-- QQC000D** (QQ76.9k)——现代,美丽的API测试客户端. 自我托管的"邮递员"的替代品,具有直观的界面和强大的特性.
-- QQC000D** (QQ 74.8k)-浏览器中的VS代码. 使用网页浏览器访问您的开发环境 。
-- QQC000D** (QQ67k)——用于配置管理,应用部署,和管弦乐的自动化平台.
-- QQC000D** (XQ66.9k) ——在当地运行 GitHub Actions. 测试工作流程,然后推动避免CI中的审判和错误。
-- QQC000D** (XQ45.9k) ——有Markdown支持的轻量级记分服务. 自己主持推特/X的替代品,用于快速笔记和思考.
-- QQC000D** (⭐38.8k)-开源调度基础设施. 管理会议、活动和预约的美丽时间安排系统。
-- QQC000D** (XQ 28.6k)——由Make所启发的指挥跑者. 用简单的语法保存并运行项目特定命令.
-- QQC000D** (QQ 27.3k) – 用于建设业务应用的低码平台. 创建内部工具,管理面板,以及没有编码的工作流程.
-- QQC000D** (QQ 25. 1k) – 编辑器停止响应时用于刷新光标会话并清除自由级使用限制的 CLI 帮助器.
-- QQC000D** (QQ16k)——任务管理器和项目跟踪器. 时间跟踪,Jira集成,和Pomodoro计时器,以达到最大的生产力.
-- QQC000D**(QQ 15.8k)——微服务高性能API网关. 有丰富的插件生态系统和企业支持的生产准备解决方案。
-- QQC000D** (XQ 15.6k) ——读取后服务与同步. 保存文章、通讯和文件,供日后在所有设备上阅读。
-- QQC000D** (QQ 14.2k) – 客户端唯能创建可复制的dev环境的工具. 与多克,库伯内特斯,云提供商合作.
-- QQC000D** (QQ 14.2k)——任务跑者与构建工具. 使用跨平台支持和YAML配置的更简单的Make替代.
-- QQC000D** (XQ 13.5k)-云发展环境. 为任何 GitHub, GitLab, 或 Bitbucket 工程, 旋转准备到代码的 dev 环境 。
-- QQC000D** (XQ 13.3k) ——自办Zapier工作流程自动化替代品. 连接无代码的应用程序和服务,完全开源,并注重隐私.
-- QQC000D** (QQ 12.5k)-跨平台文本扩展器. 加速使用自定义片段和缩写打字.
-- QQC000D** (XQ 12.5k)——API测试和取笑工具. 具有智能模拟生成和回放能力的自发端到端测试.
-- QQC000D** (XQ 11.7k) – MCP服务器将结构化的Figma布局上下文流到Cursor等AI编码代理,用于设计-意识开发.
-- QQC000D**(QQ 8.6k)——简单而强大的项目管理和战略规划系统. 与kanban板和时间跟踪一起提供敏捷的方法支持。
-- QQC000D** (QQ 5.7k)——MCP集成,让Cursor通过代理工作流程读取并程序更新了Figma设计.
-- QQC000D** (QQ 2.3k) ——具有维基功能的自办知识库. 在一个地方组织文献,运行本和团队知识.
-- QQC000D** (XQ328)-Android IDE用于在Android设备上开发全版Android应用. 拥有Gradle支持,终端和AI助手的完整开发环境.
-- QQC000D** (⭐278)-由TweetDeck所启发的RSS和社交媒体聚合. 拥有熟悉界面的自办饲料阅读器.
-- QQC000D** (QQ0)——基于VS代码的AI动力代码编辑器. 用于代码生成和重构的集成AI助手.
-- QQC000D** (QQ0)-低码可视ETL管路构造器. 以拖放接口构建数据转换工作流程.
-- QQC000D** (QQ0)-无依赖自动化平台. 简单而轻巧的工作流程自动化,没有外部依赖性.
-- QQC000D** (QQ0)——以YAML为基础的工作流程自动化替代n8n. 轻量级工作流程引擎不依赖云.
-- QQC000D** (XQ0)——视觉Python ETL管道建设器. 拖放接口用于创建数据转换工作流程而无需编码.
+- **[RustDesk](https://github.com/rustdesk/rustdesk)** (⭐ 102k) — Open-source remote desktop software. Self-hosted alternative to AnyDesk for remote access and support.
+- **[LocalSend](https://github.com/localsend/localsend)** (⭐ 70.1k) — Secure file sharing over local network. Encrypted file transfer between devices without cloud or internet.
+- **[Pi-hole](https://github.com/pi-hole/pi-hole)** (⭐ 54.2k) — Network-wide ad blocking via your own Linux hardware. Self-hosted DNS sinkhole that blocks ads and trackers at the network level.
+- **[mitmproxy](https://github.com/mitmproxy/mitmproxy)** (⭐ 41.2k) — Interactive HTTPS proxy for penetration testers and developers. Inspect, modify, and replay HTTP/HTTPS traffic.
+- **[Bruno](https://github.com/usebruno/bruno)** (⭐ 38.6k) — API client for testing REST, GraphQL, and SOAP APIs. Lightweight alternative to Postman and Insomnia with offline-first architecture.
+- **[httpie](https://github.com/httpie/cli)** (⭐ 37k) — User-friendly HTTP client for testing APIs. Expressive syntax with syntax highlighting and JSON support out of the box.
+- **[Chatwoot](https://github.com/chatwoot/chatwoot)** (⭐ 26k) — Open-source customer engagement platform. Unified inbox for all customer conversations across multiple channels.
+- **[ngrok](https://github.com/inconshreveable/ngrok)** (⭐ 24.4k) — Reverse proxy for creating secure tunnels to localhost. Essential for webhook testing and exposing local services.
+- **[bandwhich](https://github.com/imsnif/bandwhich)** (⭐ 11.3k) — Terminal bandwidth utilization tool. Shows current network usage by process, connection, and remote IP.
+- **[NETworkManager](https://github.com/BornToBeRoot/NETworkManager)** (⭐ 7.7k) — Network toolkit with WiFi analyzer, port scanner, and RDP/SSH management. Professional network administration tool for Windows.
+- **[dog](https://github.com/ogham/dog)** (⭐ 6.5k) — Modern DNS client with colored output and support for DNS-over-HTTPS. Better alternative to `dig` with clearer output.
+- **[curlie](https://github.com/rs/curlie)** (⭐ 3.5k) — Modern curl with httpie-like interface. Combines curl's power with httpie's user-friendly syntax.
+- **[graftcp](https://github.com/hmgle/graftcp)** (⭐ 2.3k) — Transparent TCP proxy for any application. Redirect TCP connections without modifying application code or configuration.
+- **[Espectre](https://github.com/francescopace/espectre)** (⭐ 1.3k) — Wi‑Fi CSI-based presence/motion detection using commodity routers. Local-first occupancy sensing with Home Assistant integration.
+- **[Mirotalk](https://github.com/mirotalk/mirotalk)** (⭐ 0) — P2P video conferencing via WebRTC. Simple and fast alternative to Zoom and Google Meet with peer-to-peer connections.
+- **[easy-postman](https://github.com/lakernote/easy-postman)** (⭐ 0) — Load testing and integration testing tool for APIs. Simplified alternative to Postman with automated testing capabilities.
+- **[share](https://github.com/schollz/share)** (⭐ 0) — End-to-end encrypted file transfer via web or CLI. Secure peer-to-peer file sharing without intermediary servers.
+- **[FileZilla](https://filezilla-project.org/)** — Lightweight FTP client for file transfers. Upload files to servers and edit code directly on remote servers.
+- **[Wireshark](https://freecodecamp.org/news/use-wireshark-filters-to-analyze-network-traffic)** — Network protocol analyzer for debugging traffic. Open-source tool for network troubleshooting, analysis, and protocol development.
+- **[Tailscale VPN](https://freecodecamp.org/news/set-up-a-home-vpn-on-a-raspberry-pi)** — Mesh VPN with free open-source client and self-hosting. Zero-config VPN for creating secure networks between devices.
+- **[Postman](https://freecodecamp.org/news/master-api-testing-with-postman)** — Free open-source version of Postman for API testing. Complete API development environment with automated testing capabilities.
 
-### 商业和企业
-
-企业资源规划系统、服务台解决方案和业务管理工具。
-
-- QQC000D** (XQ66.5k) – 开源替代Notion. 用自定义的块和数据库进行注释、文件和项目管理的隐私第一工作空间。
-- QQC000D** (QQ 43.9k)——自由,无限,开源团队聊天解决方案. 拥有大量定制和集成的Slack的自办替代方案。
-- QQC000D** (QQ 39.8k)-开源项目管理工具. 用于软件团队的问题跟踪、循环和模块。
-- QQC000D** (QQ 39.3k)——隐私第一,开源知识管理和记事平台. 具有双向链接和图视图的本地第一工具。
-- QQC000D** (⭐35.9k)-现代知识库和维基平台. 快速,可搜索的文件与团队实时协作.
-- QQC000D** (QQ 34.4k) — 开源自办的Slack替代品. 安全团队通信平台,实现文件共享和集成.
-- QQC000D** (QQ 30.1k)-自动化公司综合开源ERP系统. 一个平台的财务会计、库存、客户关系管理和人力资源。
-- QQC000D** (QQ 28.5k)-高性能网络服务器和倒置代理. 轻量级的HTTP服务器具有广泛的配置选项和高通量支持.
-- QQC000D** (QQ 24.5k) — 路由器嵌入式操作系统. Linux 对嵌入式设备的分布,有软件包管理和广泛的定制.
-- QQC000D** (QQ 24k)——在拉拉维尔上建免费电子商务平台. 完成有活跃社区和广泛功能的在线存储解决方案.
-- QQC000D** (QQ 23.8k)——强大的开源团队聊天. 串通对话,以话题为主的组织,以及广泛的整合.
-- QQC000D** (QQ 15.8k) — 带有端到端加密的私人信使. 开源短信平台关注隐私和安全.
-- QQC000D** (XQ 13.2k)-网络项目管理软件. 全面解决项目规划、团队协作和时间跟踪。
-- QQC000D** (XQ 12k)——分散通信开放标准. 安全分散的通讯网络,有通往其他平台的桥梁。
-- QQC000D** (QQ 5.4k) — 自由,开源防火墙和路由器平台. 网络安全器械有防火墙,VPN,并具有通路能力.
-- QQC000D** (QQ 5.3k)-简单网络分析. 隐私意识 轻量级 和开源替代 Google Analytics.
-- **XC000D** (⭐ 4.3k) - 时间跟踪和对团队和自由职业者的最低会计制度。 追踪工作时间并生成发票。
-- QQC000D** (QQ 4.1k) — 硬化FreeBSD基于防火墙和路由平台. 企业级防火墙分布具有广泛的安全性能.
-- QQC000D** (QQ 3.6k)-大众票管理系统供客户支持. PHP基于数千个组织信任的服务台解决方案.
-- QQC000D** (QQ 3.3k)-餐厅平台和在线订购系统. 以Laravel为基础的管理餐馆和食品运送的解决方案。
-- QQC000D** (QQ 2.7k) ——自办可做可做可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作可作 开源任务管理,包括列表,kanban板和甘特图.
-- QQC000D** (XQ 2.5k) – 有现代网络界面的开源服务台. 拥有知识基础和售票系统的客户支持平台。
-- QQC000D** (QQ531)-免费开源项目管理平台. 具有kanban、问题和团队合作特点的敏捷项目管理。
-- QQC000D** (QQ0)——Matrix的安全通信应用. 带有端到端加密和现代界面的分散式消息.
-- QQC000D** (QQ0)——Trello,Jira,和Asana的开源替代品. 具有 kanban 板、 表格和日历的项目管理工具 。
-- QQC000D** (QQ0)——为网络思想所设计的强力便笺. 创建双向链接和图表可视化的连接注释 。
-- QQC000D** (QQ0)——服务台和发行管理系统. 替代Zendesk和由Node.js所建的Jira.
-- QQC000D** (QQ 0)- 分级记事处理应用 有强烈加密. 以笔记,图像,和网络剪辑来建立个人知识库.
-- QQC000D** (QQ0)——现代开源软件用于学校与教育管理. 教育机构自动化制度.
-- QQC000D** (QQ0)——自办WhatsApp API替代品. 开放源代码HTTP API用于WhatsApp业务整合而无需第三方服务.
-- QQC000D** (QQ0)——为企业、财务和后勤管理提供强大的免费企业资源规划系统。 完全商业自动化解决方案建立在Laravel上.
-- QQC000D** (QQ0)——即时互联网微支付协议. 开放源码、免费和分散的协议,能够在因特网上进行即时微交易。
-- QQC000D** — Microsoft Office的完整开源办公套件替代. 在线编辑文件、电子表格和具有协作功能的演示。
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## & 机器学习
+## 🛠️ Development Tools
 
-LLM框架,AI代理,以及机器学习工具.
+### Git Tools
 
-- QQC000D** (QQ156k) ——在当地与大型语言模型起起跑. 支持Llama 2,Code Llama,Mistral等开放型号.
-- QQC000D** (XQ115k) — LLMs 的用户友好网络界面. 与Ollama和OpenAI兼容的API合作.
-- QQC000D** (QQ 46.5k) – 有拖放接口的可视LLM工作流程构建器. 创建AI代理,聊天机,以及没有编码的多代理系统.
-- QQC000D** (QQ 39.2k) – 开源ChatGPT可选,100%下线. 本地运行 LLMS 的桌面应用程序 。
-- QQC000D** (XQ 38.2k) – OpenAI API本地运行的起降替换. 使用消费级硬件来运行LLM,生成图像,并合成音频.
-- QQC000D** (QQ 34.2k) — 将AI纳入个人工作流程的框架. 自定义的AI模式和日常任务的提示.
-- **X C000D** (⭐ 24.1k)-由LLMs提供动力的自主研究助理. 对任何专题进行深入研究并编写综合报告。
-- QQC000D** (XQ 19.3k) ——机器人学习的端到端开源堆栈. 完成机器人系统的培训和部署框架。
-- QQC000D** (QQ 4.4k) — AI动力相片修复工具. 使用先进的机器学习算法恢复被损坏的旧相片.
-- QQC000D** (QQ 3k) — SDK用于在Cloudflare的边缘建设AI动力实时互动体验. 由低延迟的代理和多模式互动组成。
-- QQC000D** (XQ 2.1k)-AI动力终端代理. 与多个LLM后端一起工作,协助直接在终端执行编码任务.
-- QQC000D** (XQ 1.8k) ——在图像数据集中查找重复和异常. 快速高效的数据集质量控制和校正工具.
-- QQC000D** (XQ 1.4k)——MCP服务器的视觉检查员. 模式背景协议执行的开源调试与监测工具.
-- QQC000D** (XQ 1. 3k) ——将LLMs纳入spaCy NLP管道. 将传统的NLP与现代语言模型相融合,用于增强文本处理.
-- QQC000D** (XQ 253)——面向Windows和Linux的开源面部识别SDK. 面相检测,地标取出,地物嵌入,和100%的精度处理的相似性比较.
-- QQC000D** (⭐242)-终端AI编码代理. 智能代码生成和帮助不离开终端.
-- QQC000D** (QQ 188)-LLM动力的网络刮子发电机. 使用自然语言描述自动生成网络刮取脚本.
-- QQC000D** (QQ0) – OpenAI相容的API用于本地苹果模型. 以OpenAI API相容性简化苹果硅的基于-device推论.
-- QQC000D** (QQ0) – 有内置AI代理的替代浏览器. 具有集成AI辅助能力的以隐私为重点的浏览器.
-- QQC000D** (QQ 0) — AI平台的免费API密钥. 开源服务提供各种AI模型API的免费访问.
-- QQC000D** (QQ0)-工程任务开源LLM. 代码生成,bug检测,自主测试,以及大工业代码库的补丁.
-- QQC000D** (QQ0)-由语言模型提供动力的应用程序开发框架. 建立聊天机,代理,和RAG系统.
-- QQC000D** (QQ0) – 与您的文档进行互动,使用没有互联网的LLMS. 100%的私人,没有数据离开你的执行环境。
-- QQC000D** (⭐0)-AI代理链的框架和构造器. 用于构建复杂多代理系统的开源工具包.
-- QQC000D** — 构建带有Node.js和Go的AI应用程序的框架. Google开发AI动力特性和应用的开源工具包.
-- QC000D**——优化和汇编ML/AI模型的框架。 Google的开源编译器堆栈,用于机器学习工作量.
-- QQC000D**——自动支持开放源码软件项目的代理。 Google负责开源项目维护和发行解析的AI动力助手.
-- QQC000D ** — 本地LLM支持的RAG应用程序矢量数据库. 开源堆栈,用于建筑取回-增强生成系统.
-- QQC000D** — 连接AI工具的开源协议和服务器. 构建AI代理集成的标准化框架.
+Version control utilities that enhance your Git workflow.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+- **[lazygit](https://github.com/jesseduffield/lazygit)** (⭐ 67.8k) — Simple terminal UI for git commands. Stage hunks, manage branches, and resolve conflicts with keyboard-driven interface.
+- **[gh](https://github.com/cli/cli)** (⭐ 41.3k) — GitHub's official command-line tool. Create issues, pull requests, and manage repositories without leaving the terminal.
+- **[delta](https://github.com/dandavison/delta)** (⭐ 28.1k) — Syntax-highlighting pager for git, diff, and grep output. Makes code review more pleasant with side-by-side diffs.
+- **[git-extras](https://github.com/tj/git-extras)** (⭐ 17.9k) — Collection of useful git utilities including summary, effort, changelog, and more.
+- **[tig](https://github.com/jonas/tig)** (⭐ 13k) — Text-mode interface for Git. Browse repository history, blame view, and tree navigation in the terminal.
+- **[glab](https://github.com/profclems/glab)** (⭐ 2.1k) — GitLab CLI tool for managing issues, merge requests, and pipelines directly from the command line.
+- **[Wild Linker](https://github.com/wild-linker/wild)** (⭐ 0) — Fast open-source linker written in Rust. High-performance linker for optimizing build times and reducing binary sizes.
 
----
+### Code Editors
 
-## *                         
+Modern text editors optimized for productivity and extensibility.
 
-持续整合和持续部署平台和工具。
+- **[Neovim](https://github.com/neovim/neovim)** (⭐ 94.2k) — Hyperextensible Vim-based text editor. Built-in LSP support, Lua configuration, and modern plugin ecosystem.
+- **[Helix](https://github.com/helix-editor/helix)** (⭐ 41.2k) — Post-modern text editor with built-in LSP, tree-sitter, and multiple selections. No configuration needed out of the box.
+- **[Void](https://github.com/voideditor/void)** (⭐ 27.5k) — AI-native, open-source code editor built on Tauri with multi-agent workflows, checkpointing, and intuitive diff visualizations.
+- **[micro](https://github.com/zyedidia/micro)** (⭐ 27.2k) — Modern and intuitive terminal-based text editor. Supports mouse input and common keybindings (Ctrl+C, Ctrl+V).
+- **[ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)** (⭐ 24.7k) — Chromium browser without Google integration. Enhanced privacy and security with removed Google services and telemetry.
+- **[amp](https://github.com/jmacdonald/amp)** (⭐ 4k) — Vi-inspired text editor written in Rust. Minimal design with extensible plugin system.
+- **[Notepad++](https://notepad-plus-plus.org/)** — Feature-rich code and text editor for Windows. Supports all programming languages with syntax highlighting and plugins.
 
-- QQC000D** (XQ 29.2k)——现代负载测试工具用于性能测试. 基于JavaScript,具有强大的脚本能力来进行负载,应力和突起测试.
-- QQC000D** (QQ 27.1k)-分布式载荷测试框架. 定义 Python 中的测试情景并模拟数百万同时存在的用户.
-- QQC000D** (QQ 24.6k)-可扩展自动化服务器. 千个用于构建,部署和自动化工程的插件.
-- QQC000D** (QQ 7.3k)-开源连续发送服务器. 采用价值流可视化的复杂管线模型.
-- QQC000D** (QQ 5.7k) — 以简洁为主的社区"无人机"叉. 自办CI/CD,配置为YAML.
-- QQC000D** (QQ0)-集装箱-本地CI/CD平台. 管道作为多克建筑的代码.
-- QQC000D** (QQ0)——用于建筑,测试和部署代码的工作流程自动化. 与 GitHub 寄存器的本地融合 。
-- QQC000D** — 完整的DevOps平台,配有Git仓库、CI/CD管道、问题跟踪和集装箱登记。
-- QQC000D**-大型项目开源建设系统. 谷歌快速可扩展,多语言的建设工具.
-- QQC000D** — 用于分析和测量性能的免费载荷测试工具. 应用程序性能测试的开源解决方案.
+### Debugging
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+Tools for diagnosing and fixing issues in your applications.
 
----
+- **[drawio-desktop](https://github.com/jgraph/drawio-desktop)** (⭐ 57.8k) — Powerful diagram editor with offline support. Create flowcharts, UML diagrams, network topologies, and more.
+- **[jsoncrack](https://github.com/AykutSarac/jsoncrack.com)** (⭐ 42.4k) — Interactive JSON structure visualizer. Beautiful and intuitive tool for exploring complex JSON data structures.
+- **[drawdb](https://github.com/drawdb-io/drawdb)** (⭐ 34.8k) — Database schema diagrams with automatic SQL generation. Visual database design tool with forward and reverse engineering.
+- **[Netron](https://github.com/lutzroeder/netron)** (⭐ 31.8k) — Visualizer for neural networks and ML models. View model architectures, layer details, and weights interactively.
+- **[delve](https://github.com/go-delve/delve)** (⭐ 24.4k) — Debugger for the Go programming language. Supports goroutines, channels, and Go-specific debugging features.
+- **[Graphite](https://github.com/GraphiteEditor/Graphite)** (⭐ 22.6k) — Professional-grade raster and vector graphics editor. Modern design tool with infinite canvas and powerful editing capabilities.
+- **[dnote](https://github.com/dnote/dnote)** (⭐ 3k) — Terminal-based notebook on SQLite. Simple note-taking system with command-line interface and local storage.
+- **[fastcrud](https://github.com/benavlabs/fastcrud)** (⭐ 1.4k) — Async CRUD operations for FastAPI with automatic JOINs. Simplified database operations with automatic relationship handling.
+- **[pdb++](https://github.com/pdbpp/pdbpp)** (⭐ 1.4k) — Enhanced Python debugger with syntax highlighting, tab completion, and better introspection.
+- **[ito](https://github.com/heyito/ito)** (⭐ 458) — Voice dictation for any application. Universal voice input tool that works across different programs and platforms.
+- **[dotbins](https://github.com/basnijholt/dotbins)** (⭐ 210) — CLI binary manager through dotfiles. Manage and version control command-line tools in your dotfiles repository.
+- **[bkhtmltopdf](https://github.com/bkhtmltopdf/bkhtmltopdf)** (⭐ 198) — Fast HTML to PDF converter. High-performance tool for generating PDF documents from HTML content.
+- **[Cronboard](https://github.com/cronboard-io/cronboard)** (⭐ 0) — Text-based cron job management dashboard. Monitor and manage scheduled tasks from a simple interface.
+- **[KeenWrite](https://github.com/DaveJarvis/keenwrite)** (⭐ 0) — Markdown editor with variable support and graph visualization. Advanced text editor for technical writing and documentation.
+- **[Lokus](https://github.com/ParentalControlHub/lokus)** (⭐ 0) — Local note-taking app with visual connections. Create linked notes with graph view of relationships between entries.
+- **[Parm](https://github.com/parm-pm/parm)** (⭐ 0) — Cross-platform package manager pulling releases directly from GitHub. Simple dependency management for open-source projects.
+- **[Symiosis](https://github.com/Archit1208/Symiosis)** (⭐ 0) — Advanced note editor with search and vim mode. Powerful markdown-based note-taking with syntax highlighting.
+- **[gdb](https://www.sourceware.org/gdb/)** — GNU Debugger for C, C++, and other languages. Industry-standard debugger with powerful scripting capabilities.
+- **[lldb](https://lldb.llvm.org/)** — Next-generation debugger from LLVM project. Excellent for debugging C, C++, Objective-C, and Swift.
+- **[Lazarus IDE](https://www.lazarus-ide.org/)** — Cross-platform IDE for Pascal and Object Pascal. Free alternative to Delphi with visual component library.
+- **[LibreOffice](https://www.libreoffice.org/)** — Free and open-source office suite. Complete alternative to Microsoft Office with Writer, Calc, Impress, and more.
+- **[Qt](https://www.qt.io/)** — Cross-platform application framework for GUI development. Write once, deploy everywhere alternative to Electron with native performance.
 
-## 视频处理
+### Performance
 
-视频生成、操作和分析工具。
+Benchmarking and profiling tools for optimization.
 
-- QQC000D** (QQ135k)-地物丰富的指令线视频下载器. 有附加特性和修补的fork of youtube-dl.
-- QQC000D** (QQ 103k)——自由开源2D和3D游戏引擎. 跨平台游戏开发有视觉脚本和广泛的功能集.
-- QQC000D** (QQ84k)——自办相片和视频备份解决方案. 以自动备份和面部识别替代Google相片.
-- QQC000D** (QQ75.7k)——从一幅相片中实时换相并一击深假视频生成. GPU-加速管道用于活流和录音.
-- QQC000D** (QQ 54.6k) – 完整的跨平台解决方案,用于录制,转换,并流出音频和视频. 多媒体处理行业标准.
-- QQC000D** (XQ45.6k)——自办媒体服务器. 自由开放源代码替代Plex和Emby用于流媒体收藏.
-- QQC000D** (QQ 41.1k) ——AI动力图像提升工具. 在当地使用机器学习模型来提升图像质量.
-- QQC000D** (QQ 21.3k) ——具有综合格式支持的视频转码器. 用于批处理的GUI和CLI版本.
-- QQC000D** (QQ 7.8k)——自办照片管理服务. 有面部识别和自动标记的开源替代Google相片.
-- QQC000D** (QQ 7.3k)-开源运输业务模拟游戏. 增强版"交通大亨豪华"配在线多人游戏.
-- QQC000D** (QQ 6.9k)——开源多玩家voxel RPG. 由社区驱动的游戏,带有程序世界生成和合作游戏.
-- QQC000D** (QQ5k)-免费3D卡特竞速游戏. 以Tux和有各种音轨和模式的朋友为主角的趣味赛车游戏.
-- QQC000D** (QQ 4.2k)-自由开源视频编辑. 具有多轨编辑和效果的专业非线性视频编辑软件.
-- QQC000D** (XQ 2.2k) — 视频自动字幕生成器. 离线能力工具使用语音识别来创建字幕文件.
-- QQC000D** (QQ 1.7k)——高级视频编码和优化器. 专业级视频转换,并进行分批处理和格式优化.
-- QQC000D** (XQ 1.5k) ——自办API,用于会话记录自动化. 自动从音频到文本转换和会议摘要的开源解决方案.
-- QQC000D**(QQ556)——将OpenAI Sora 2视频世代连锁并扩展至超过12秒极限的工具. 自动即时解构并分解.
-- QQC000D** (QQ0)——AI从文本中发声. 使用文字对语音技术生成自然相声音频的开源工具.
-- QQC000D** (QQ0)——轻量级视频播放器没有遥测或跟踪. 注重隐私的媒体播放器,有干净的界面.
-- QQC000D** (QQ0)-开源视频生成器与API. 使用高级AI模型和生成技术创建视频.
-- QQC000D** (QQ0)-从视频中取出头部动作驱动动画生成器. 深度以学习为主的工具来创造现实的面部动画.
-- QQC000D** — 强而简单的视频编辑器,并定期更新. 适合教育内容和基本的视频/音频编辑。
-- QQC000D** — 开源流和录相软件. 记录桌面, 流到 Twitch/ YouTube, 并抓取调取档案 。
-- QQC000D**-专业3D创作套房. 电影、游戏和视觉效果的建模、动画、渲染和堆肥。
-- QQC000D** — 自由开源音频编辑器. 记录,编辑,并用专业质量工具来混合音频音轨.
-- QQC000D**-环球媒体玩家. 播放几乎所有的视频和音频格式而不安装编码器.
-- QQC000D** — 轻量级,强大的媒体播放器. 基于最小的图形用户界面,高度自定义和可脚本的命令行.
-- QQC000D** — 自由开源的3D音频格式和工具. Google的空间音频技术用于浸入音效体验.
+- **[hyperfine](https://github.com/sharkdp/hyperfine)** (⭐ 26.7k) — Command-line benchmarking tool with statistical analysis. Warm-up runs, parameterized benchmarks, and export to various formats.
+- **[flamegraph](https://github.com/brendangregg/FlameGraph)** (⭐ 18.9k) — Stack trace visualizer for performance profiling. Identify hotspots in CPU-intensive applications.
+- **[KDiskMark](https://github.com/JonMagon/KDiskMark)** (⭐ 1.5k) — Disk benchmark tool with GUI for Linux. Measure read/write speeds and I/O performance of storage devices.
+- **[valgrind](https://valgrind.org/)** — Instrumentation framework for building dynamic analysis tools. Detect memory leaks, race conditions, and cache misses.
+- **[perf](https://perf.wiki.kernel.org/)** — Linux profiling tool with performance counters. Analyze CPU cycles, cache misses, and hardware events.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## QQ 设计和图形
+## 🐳 Docker & Cloud
 
-用于创建图像,插图,和视觉内容的专业图形设计工具.
+Container management and cloud storage solutions.
 
-- QQC000D** (QQ 23.3k) —— AI辅助设计工具,用于视觉创建,造型,并用活代码同步来编辑React UI.
-- QQC000D** (QQ 31) —— 将矢量路径转换为 XAML 的图片插件. 允许 C# 开发者直接导出用于WPF,UWP和.NET MAUI应用程序的Figma设计到XAML代码.
-- QQC000D** — 自由开源图像编辑器. 专业替代Photoshop进行相片编辑,标识创建和平面设计.
-- QQC000D** — 专业矢量图形编辑器. 精准地创建可伸缩的标志,插图,和印刷材料.
-- QQC000D** — 用于布局和印刷准备的桌面出版软件. 创建杂志、小册子和产品包装。
+- **[Syncthing](https://github.com/syncthing/syncthing)** (⭐ 77.5k) — Continuous file synchronization program. P2P sync without cloud intermediaries.
+- **[MinIO](https://github.com/minio/minio)** (⭐ 58.1k) — High-performance, S3-compatible object storage. Self-hosted alternative to AWS S3 with enterprise features.
+- **[Traefik](https://github.com/traefik/traefik)** (⭐ 57.7k) — Modern reverse proxy and load balancer. Automatic service discovery, Let's Encrypt support, and middleware system.
+- **[Rclone](https://github.com/rclone/rclone)** (⭐ 53.5k) — Command-line program to sync files and directories to and from cloud storage. Supports 40+ cloud providers.
+- **[lazydocker](https://github.com/jesseduffield/lazydocker)** (⭐ 47.5k) — Terminal UI for Docker and Docker Compose. Manage containers, view logs, inspect images, and restart services with keyboard shortcuts.
+- **[docker-compose](https://github.com/docker/compose)** (⭐ 36.5k) — Tool for defining and running multi-container Docker applications. YAML-based configuration for reproducible environments.
+- **[Portainer](https://github.com/portainer/portainer)** (⭐ 35.2k) — Lightweight container management UI. Web-based interface for Docker, Kubernetes, and Swarm.
+- **[Nextcloud](https://github.com/nextcloud/server)** (⭐ 33.3k) — Self-hosted file sync and collaboration platform. Complete alternative to Google Workspace with calendar, contacts, and more.
+- **[k9s](https://github.com/derailed/k9s)** (⭐ 31.8k) — Terminal UI for Kubernetes clusters. Monitor resources, view logs, and execute commands without memorizing kubectl syntax.
+- **[ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)** (⭐ 25.6k) — Self-hosted web archive. Download and save websites for offline viewing with full-text search.
+- **[kubectl-ctx/kubectl-ns](https://github.com/ahmetb/kubectx)** (⭐ 19.2k) — Faster way to switch between Kubernetes contexts and namespaces.
+- **[kopia](https://github.com/kopia/kopia)** (⭐ 11.5k) — Fast and secure backup tool. Cross-platform backup solution with deduplication and encryption.
+- **[Dozzle](https://github.com/amir20/dozzle)** (⭐ 10.2k) — Real-time log viewer for Docker containers. Simple web UI with filtering and search capabilities.
+- **[OpenShift](https://github.com/openshift/origin)** (⭐ 8.6k) — Enterprise Kubernetes platform by Red Hat. Production-ready container platform with developer tools and automated operations.
+- **[docker2exe](https://github.com/rzane/docker2exe)** (⭐ 1.9k) — Package Docker images into single-file executables. Ship applications as self-contained binaries that embed an OCI image and a minimal runtime.
+- **[dock-droid](https://github.com/sickcodes/dock-droid)** (⭐ 1.3k) — Run Android x86/ARM in a Docker container. Full Android system emulation with hardware acceleration support.
+- **[docker-jdownloader-2](https://github.com/jlesage/docker-jdownloader-2)** (⭐ 1.3k) — JDownloader 2 in a Docker container with web GUI. Automated file downloader with support for many file hosting services.
+- **[IronBucket](https://github.com/iron-bucket/iron-bucket)** (⭐ 0) — S3-compatible object storage written in Rust. Fast and efficient self-hosted storage solution.
+- **[Rancher](https://github.com/rancherfederal/rancher)** (⭐ 0) — Enterprise Kubernetes management platform. Complete solution for deploying, managing, and securing Kubernetes clusters at scale.
+- **[Windows Docker Container](https://github.com/docker/library/tree/master/windows)** — Official Windows base images for Docker. Run Windows applications in containers using Docker Desktop or Windows containers.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+### Databases
 
----
+High-performance database systems and administration tools for various use cases.
 
-## 3D 视野和扫描
+- **[Supabase](https://github.com/supabase/supabase)** (⭐ 92.5k) — Open-source Firebase alternative. Complete backend-as-a-service platform with real-time subscriptions, authentication, and storage.
+- **[Appwrite](https://github.com/appwrite/appwrite)** (⭐ 53.5k) — Backend-as-a-service platform. Self-hosted solution for building web and mobile applications with authentication, databases, and storage.
+- **[PocketBase](https://github.com/pocketbase/pocketbase)** (⭐ 52.6k) — Open-source backend in one file. Lightweight alternative to Firebase with real-time subscriptions and file storage.
+- **[DBeaver](https://github.com/dbeaver/dbeaver)** (⭐ 46.7k) — Universal database tool supporting 100+ database types. SQL editor, ER diagrams, data visualization, and query execution for MySQL, PostgreSQL, MongoDB, and more.
+- **[ClickHouse](https://github.com/ClickHouse/ClickHouse)** (⭐ 44k) — Column-oriented database for real-time analytics. Extremely fast queries on large datasets with SQL interface.
+- **[Prefect](https://github.com/PrefectHQ/prefect)** (⭐ 20.8k) — Workflow orchestration framework for data pipelines. Modern solution for building, scheduling, and monitoring data workflows.
+- **[Airbyte](https://github.com/airbytehq/airbyte)** (⭐ 20k) — Data integration platform for ELT pipelines. Open-source solution for building data warehouses and analytics systems.
+- **[Neo4j](https://github.com/neo4j/neo4j)** (⭐ 15.4k) — Native graph database for connected data. High-performance database optimized for graph data structures and complex relationship queries.
+- **[Dagster](https://github.com/dagster-io/dagster)** (⭐ 14.4k) — Data orchestration platform for machine learning. Framework for building, testing, and monitoring ML pipelines and data workflows.
+- **[ArangoDB](https://github.com/arangodb/arangodb)** (⭐ 14k) — Multi-model database supporting graphs, documents, and key-values. Unified database with flexible data modeling capabilities.
+- **[dbt](https://github.com/dbt-labs/dbt-core)** (⭐ 11.8k) — Data transformation tool for analytics engineering. SQL-based framework for transforming data in warehouses with testing and documentation.
+- **[OceanBase](https://github.com/oceanbase/oceanbase)** (⭐ 9.7k) — Distributed SQL database compatible with MySQL. Enterprise-grade database with high availability and scalability.
+- **[stagDB](https://github.com/stagdb/stagdb)** (⭐ 0) — Advanced PostgreSQL admin panel with instant branch management. Visualize, manage, and branch your database schemas effortlessly.
+- **[Apache Iceberg](https://iceberg.apache.org)** — Open table format for big data. Google's high-performance format for large analytic datasets with ACID transactions.
+- **[Elasticsearch](https://freecodecamp.org/news/elasticsearch-in-5-hours)** — Free and open-source search engine for data. Distributed, RESTful search and analytics engine capable of addressing a growing number of use cases.
 
-用于3D计算机视觉,扫描,重建,点云处理的开源工具和库.
+### Web Development
 
-- QQC000D** (QQ84.8k)- 基本计算机视觉图书馆. 包括立体视觉,深度处理,点云生成,立体相机,后处理等算法.
-- QQC000D** (QQ 13k)-3D数据处理综合库. 点云操纵,网相生成,可视化,扫描注册. Python和C++ 支持,并有大量文档.
-- QQC000D** (XQ 12.3k) – 为3D重建提供强大的开源摄影测量管. 基于节点的视觉编程接口,从相片到3D模型的完整处理,Python API. 用于科学,考古学,和游戏开发.
-- QQC000D** (XQ 10.7k) — 2D/3D图像和点云处理综合库. 用于过滤、分块、登记、地表重建和地物估计的工业标准工具包。
-- QQC000D** (XQ 10.3k) ——工业-标准结构-从运动到摄影测量工具. 用相机自动校准和密集的重建管线从多幅图像中重建出3D场景.
-- QQC[TripoSR](https://github.com/VAST-AI-Research/TripoSR)D** (QQ 5.9k) – 为单相3D重建提供深度学习工具包. AI动力地表重建,对现代AI算法具有快推论和高精度. XC[Website](https://triposrai.com/)0D 时
-- QQC000D** (QQ 5.2k) ——以WebGL为基础的大数据集点云渲染器. 基于交互式浏览器的取景器,支持上百万分,并配有详细渲染和测量工具.
-- QQC000D** (QQ 4.2k)-开源点云处理与分析工具. 导入/导出标准格式,网格生成,过滤,和脚本. 对比较、合并和分析点云至关重要。
-- QQC000D** (QQ645)——用RANSAC算法在点云中安装原始3D形状的Python工具. 快速而坚固的几何原始探测(平面,球体,圆柱等).
-- QQC000D** (XQ30)——合成RGB-D图像和点云生成器. 扫描虚拟3D模型以生成用于计算机视觉培训和开发的数据集.
-- QQC000D** (⭐0)-使用Raspberry Pi和相机的DIY LiDAR 3D扫描仪项目. 开通有CC-NC-SA许可的硬件和软件. 用于点云实验的低成本激光扫描仪.
-- QQC000D** (XQ0)- 扩展大语言模型来理解点云. 启用零射出3D推理,问答,从点云数据中了解场景. [ECCV 2024最佳论文候选人].
-- QQC000D** (QQ0)——用于可视化和注释LiDAR数据的开源工具. 为自主车辆中的主动学习系统所设计,有直观的3D注释界面.
-- QQC000D** — 有相片测量的模块开源3D扫描仪. 包括图表、文件和DIY组装软件。 本地或云中进行流程扫描,用于3D打印,逆向工程,并进行数字保存.
+Modern frameworks and tools for building web applications.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+- **[Next.js](https://github.com/vercel/next.js)** (⭐ 136k) — React framework for production. Full-stack web framework with server-side rendering, static site generation, and API routes.
+- **[Deno](https://github.com/denoland/deno)** (⭐ 105k) — Secure runtime for JavaScript and TypeScript. Built-in security, modern web APIs, and first-class TypeScript support without configuration.
+- **[Tauri](https://github.com/tauri-apps/tauri)** (⭐ 98.8k) — Framework for building desktop applications with web technologies. Smaller binaries than Electron, better security, and native performance.
+- **[Svelte](https://github.com/sveltejs/svelte)** (⭐ 84.8k) — Cybernetically enhanced web framework. Write less code, build smaller bundles with reactive component architecture.
+- **[Bun](https://github.com/oven-sh/bun)** (⭐ 82.1k) — Fast all-in-one JavaScript runtime, bundler, and package manager. Drop-in replacement for Node.js with native TypeScript support and blazing speed.
+- **[Nest.js](https://github.com/nestjs/nest)** (⭐ 73.4k) — Progressive Node.js framework for building efficient server-side applications. Enterprise-grade backend framework with dependency injection and modular architecture.
+- **[Fastify](https://github.com/fastify/fastify)** (⭐ 35k) — Fast and low overhead web framework for Node.js. High-performance HTTP framework with built-in logging, routing, and validation.
+- **[pnpm](https://github.com/pnpm/pnpm)** (⭐ 33.2k) — Fast, disk space efficient package manager. Uses hard links and symlinks to save disk space while maintaining compatibility with npm.
+- **[Babylon.js](https://github.com/BabylonJS/Babylon.js)** (⭐ 24.7k) — Powerful 3D engine for the web. Create stunning 3D experiences in browsers with WebGL and WebGPU support.
+- **[Cesium](https://github.com/CesiumGS/cesium)** (⭐ 14.4k) — 3D globes and maps for the web. High-performance geospatial visualization with photorealistic rendering.
+- **[Galaxy (Uiverse.io)](https://github.com/uiverse-io/galaxy)** (⭐ 7.2k) — Massive open-source UI components library built by the community. Ready-to-use, copy-paste elements in CSS or Tailwind for rapid UI prototyping and production.
+- **[Moleculer](https://github.com/moleculerjs/moleculer)** (⭐ 6.3k) — Fast, modern, and powerful microservices framework for Node.js. Progressive microservices framework with built-in service discovery and load balancing.
+- **[Flutter](https://flutter.dev)** — Cross-platform UI framework for building beautiful native apps. Google's open-source SDK for building mobile, web, and desktop applications from a single codebase.
+- **[Angular](https://angular.io)** — Open-source framework for modern single-page applications. Google's comprehensive platform for building scalable web applications with TypeScript.
+- **[Freezed (Flutter)](https://freecodecamp.org/news/how-to-use-freezed-in-flutter)** — Code generation package for Flutter models. Open-source tool for generating data classes and union types in Dart.
+- **[RSelenium + Rvest (R)](https://freecodecamp.org/news/web-scraping-in-r-with-rselenium-and-rvest)** — Web scraping libraries for R programming. Open-source packages for automated web data extraction and browser automation.
 
----
-
-## 工业自动化和SCADA
-
-工业自动化的开源工具,SCADA系统,PLC编程,以及过程控制.
-
-- **XC000D** | XC000D-PLC编程的综合开源平台(IEC 61131-3:梯子,FBD,ST,IL,SFC). 模拟,部署到Arduino/Raspberry Pi和工业硬件,网络监测,Modbus TCP/RTU,SCADA集成.
-- QQC000D** (QQ 723)——支持西门子S7,艾伦-布拉德利,阿尔杜伊诺,拉斯贝里皮的俄语SCADA项目. 灵活可视化,报告,与工业网络融合.
-- QQC000D** (XQ366)-PLC平台与Python集成. 对具有自定义驱动器开发能力的复杂分布式项目来说是极好的。
-- QQC000D** (⭐141)-基于网络的SCADA系统在Java上被构建. 与Modbus RTU/TCP,OPC,SNMP支持的轻松部署. 视觉,警报,趋势——中小制造设施的理想.
-- **XC000D** | XC000D-强大的数据获取,可视化,管理和自动化平台(HMI,Modbus,OPC,SNMP,IEC协议,存档,脚本). 适用于制造业、能源、运输、PLC一体化和定制解决方案。
-- QQC000D** — 工业控制和可视化的开源平台. 可用于专门应用的自定义插件。
-- QQC000D**-网络PLC模拟器(IEC 61131). 不安装软件而学习并调试 PLC 程序 。
-- QQC000D** — 嵌入式系统开发工具. Google的开源嵌入式开发平台,有设备驱动程序,库,生产力工具.
-- QQC000D** — 建筑能源管理的开放模拟器. 谷歌开发与测试智能建筑控制算法的开源平台.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
-
----
-
-## QQ CAD 和 BIM 设计
-
-建筑信息建模(BIM)和计算机辅助设计(CAD)工具,用于建筑,工程,施工.
-
-- QQC000D** (XQ 26.9k) ——专业参数3D/2D CAD/BIM软件有建筑工作台. FEM集成,路径(CAM/CNC),Python脚本. 适用于建筑师,机械工程,自动化,和制造业.
-- QQC000D** (QQ 2. 3k) —— 与IFC/BIM格式合作的图书馆. 生成,解析,并融入自动化和建设项目.
-- **XC000D**-为BIM项目扩展Blender. 国际金融公司的支持,冲突探测,文档生成.
-- QQC000D** — 从任何平台查看和分析BIM模型的自由软件. 成本估算,相撞探测,数量起飞.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
-
----
-
-## 安全保卫和OSINT
-
-安全测试工具、OSINT框架和脆弱性扫描仪。
-
-- QQC000D** (QQ70.2k)-亨特社交媒体账号由用户名横跨300+网站. 基于Python的OSINT工具.
-- QQC000D** (⭐50.8k)——自办Bitwarden相容密码管理器. 具有所有Bitwarden客户端特性的轻量级服务器执行.
-- QQC000D** (XQ 36.9k)-穿透测试框架. 开发、测试和执行利用远程系统的综合平台。
-- QQC000D** (QQ33.5k)——保密管理和数据保护. 基于身份的云应用访问控制.
-- QQC000D** (⭐33.1k)-多用途数据操纵和分析工具. 用于加密,编码,压缩,和数据分析的开源网络应用.
-- QQC000D** (QQ 30.9k)-开源身份与访问管理解决方案. 添加认证到最小代码更改的应用程序中 。
-- QQC000D**(XQ 29.8k)——集装箱、文件系统和IaC的综合安全扫描仪。 检测出弱点、错位和秘密
-- QQC000D** (QQ 25.8k) — 单一的Sign-On和2FA门户网站. 具有多要素认证和授权政策的认证服务器.
-- QQC000D** (QQ 23.9k) —— 用于检测 git 寄存器中硬码密件的SAST工具. 扫描记录、树枝和整个历史
-- QQC000D** (QQ 23.3k) ——有网络界面的易用线卫视VPN. 通过方便用户的仪表板设置和管理VPN服务器.
-- **XC000D** (⭐ 23.2k)-检测出在git仓库中泄露出的秘密. 对已曝光的证书和 API 密钥进行扫描、 分支和 PR 。
-- QQC000D** (QQ 22.7k)-端到端加密云存储相片和视频. 隐私第一替代 Google Photos 具有客户端加密功能.
-- QQC000D** (QQ 18.8k) ——具有SSO和用户管理的灵活身份提供商. 支持OAuth,SAML,LDAP,以及更多的认证协议.
-- QQC000D**(XQ15.9k)——入侵预防框架. 自动禁止IP显示恶意行为如野蛮武力攻击.
-- QQC000D** (QQ 15.8k) ——带有网络界面的OSINT自动收集工具. 从100+源头收集目标情报.
-- QQC000D**(QQ 14.9k)——从公共来源收集电子邮件,子域名,主机和员工姓名. 侦察必需
-- QQC000D** (XQ 13.9k)——企业级XDR和SIEM平台. 统一安全监测、威胁检测和合规管理解决方案。
-- **XC000D** (⭐ 13.8k) - 深入进攻地表测绘和资产发现. 通过刮取和API对组织进行网络测绘.
-- QQC000D**(XQ 13.6k)——包括工具、框架和学习材料在内的安全资源清单。
-- QQC000D** (XQ 12.7k) – 跨平台密码管理器相容于KeePass. 用于管理加密密码数据库的网络界面.
-- QQC000D** (QQ 12.2k) — 开发者的身份基础设施. 具有现代协议和云土建筑的开源身份和访问管理.
-- QQC000D** (QQ 12k)-有意无保障网络应用安全培训. 寻找和利用脆弱性。
-- QQC000D** (XQ 11.5k)-开源项目免费模糊平台. Google的持续模糊服务发现安全弱点和稳定性问题.
-- QQC000D** (XQ 9.8k) — 按类别排列的OSINT工具集. 网易开源情报来源目录.
-- QQC000D** (QQ 8.4k) – 集装箱和主机运行时安全监控. 库贝内特斯和云层环境中的威胁探测行为探测引擎.
-- QQC000D** (QQ 7.2k)-网络分析框架. 用于安全研究和操作网络管理的被动网络监测工具.
-- QQC000D** (QQ 5.8k)-高性能网络IDS/IPS引擎. 网络流量分析的行业标准入侵检测和预防系统.
-- QQC000D**(QQ 4.2k)——网络和系统的脆弱性扫描仪. 综合开放源码脆弱性评估和管理解决方案。
-- QQC000D**(QQ 4.1k)——授权作为服务. 开源政策引擎用于精细的准入控制和授权决定.
-- QQC000D** (QQ 3.2k) – 活动目录证书服务(AD CS)审计和开发工具. 在AD CS中发现并滥用了错配置.
-- QQC000D** (XQ 3.2k)——网络入侵预防系统. 强大的开源NIDS具有高级威胁检测能力.
-- QQC000D** (XQ 1.5k)——为Nginx制作的基于Lua的反DDoS脚本. JavaScript 拼图挑战系统,以防范自动攻击.
-- QQC000D** (QQ237)-企业级认证与授权平台. 与SSO,MFA,以及用户管理实现完整的身份管理解决方案.
-- QQC000D** (⭐0)-无密码认证服务器. 有密码和WebAuthn支持的现代认证解决方案.
-- QQC000D** (QQ0) – 端对端文件随多克部署而下降. 共享文件, 不保存云, 完全自托管 。
-- QQC000D** — 隐私和安全重点安卓发行. 强化安全功能并强化了最大限度隐私的系统.
-- QQC000D** — 云源身份与访问管理平台. 企业级IAM解决方案有自备选项和广泛的集成.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## 教育
+## 💻 IDE & Automation
 
-为开发者提供学习资源、课程和综合指南。
+Development environments and task automation tools.
 
-- QQC000D** (QQ 432k) – 学习免费的密码,同时提供互动课. 全网开发课程附认证.
-- QQC000D** (XQ333k)——完成学习计划成为软件工程师. 覆盖了算法,数据结构,以及系统设计.
-- QQC000D** (XQ326k) ——学习如何设计大型系统. 附有图表和实例的综合指南。
-- QQC000D** (XQ198k)——计算机科学免费自学教育之路. 使用在线课程完成学位课程。
-- QQC000D** (XQ159k)——一页中掌握了命令行. 日常使用的实用例子.
-- QQC000D** (XQ 95k) ——收集每个软件开发者应该知道的技术物品. 覆盖了算法,数据结构,分布式系统,安全,架构,以及职业发展.
-- QQC000D** (QQ 52.1k)-跨平台记事应用. 有同步,加密,插件支持的Markdown编辑器.
-- QQC000D** (QQ 32.8k) – 互动视觉Git教程. 主分化,合并,再定位,通过亲身练习推进了Git工作流程.
-- QQC000D** (QQ 16.8k) – 协作LaTeX编辑. 科学论文和文件实时协作编辑.
-- QQC000D**(QQ 12.2k)——自办阅览后服务. 以全文搜索和标记保存文章供后期阅读.
-- QQC000D** (QQ 5.4k) – MIT关于计算工具的课程,每个开发者都应该知道. 壳,活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活活
-- QQC000D** (QQ0)- 完整 DevOps 学习材料有实例. 开源课程涵盖AWS, DevOps实践,和云基础设施.
-- QQC000D** (QQ0)-教育处理器模拟器. 用于学习计算机架构和组装编程的开源工具.
-- QQC000D**——让学生参与开源开发的方案. 将学生与开源组织连接到暑期编码项目的免费程序.
+- **[VS Code](https://github.com/microsoft/vscode)** (⭐ 178k) — Extensible code editor with rich ecosystem. Built-in Git, debugging, and thousands of extensions.
+- **[n8n](https://github.com/n8n-io/n8n)** (⭐ 156k) — Workflow automation tool with visual editor. Self-hosted alternative to Zapier with 200+ integrations.
+- **[Hoppscotch](https://github.com/hoppscotch/hoppscotch)** (⭐ 76.9k) — Modern, beautiful API testing client. Self-hosted alternative to Postman with intuitive interface and powerful features.
+- **[code-server](https://github.com/coder/code-server)** (⭐ 74.8k) — VS Code in the browser. Access your development environment from anywhere with a web browser.
+- **[Ansible](https://github.com/ansible/ansible)** (⭐ 67k) — Automation platform for configuration management, application deployment, and orchestration.
+- **[act](https://github.com/nektos/act)** (⭐ 66.9k) — Run GitHub Actions locally. Test workflows before pushing to avoid trial-and-error in CI.
+- **[Memos](https://github.com/usememos/memos)** (⭐ 45.9k) — Lightweight note-taking service with Markdown support. Self-hosted alternative to Twitter/X for quick notes and thoughts.
+- **[cal.com](https://github.com/calcom/cal.com)** (⭐ 38.8k) — Open-source scheduling infrastructure. Beautiful scheduling system for managing meetings, events, and appointments.
+- **[Just](https://github.com/casey/just)** (⭐ 28.6k) — Command runner inspired by Make. Save and run project-specific commands with simple syntax.
+- **[Budibase](https://github.com/Budibase/budibase)** (⭐ 27.3k) — Low-code platform for building business applications. Create internal tools, admin panels, and workflows without coding.
+- **[go-cursor-help](https://github.com/yuaotian/go-cursor-help)** (⭐ 25.1k) — CLI helper for refreshing Cursor sessions and clearing free-tier usage limits when the editor stops responding.
+- **[super-productivity](https://github.com/johannesjo/super-productivity)** (⭐ 16k) — Task manager and project tracker. Time tracking, Jira integration, and Pomodoro timer for maximum productivity.
+- **[Apache APISIX](https://github.com/apache/apisix)** (⭐ 15.8k) — High-performance API gateway for microservices. Production-ready solution with rich plugin ecosystem and enterprise support.
+- **[Omnivore](https://github.com/omnivore-app/omnivore)** (⭐ 15.6k) — Read-it-later service with synchronization. Save articles, newsletters, and documents for later reading across all devices.
+- **[DevPod](https://github.com/loft-sh/devpod)** (⭐ 14.2k) — Client-only tool to create reproducible dev environments. Works with Docker, Kubernetes, and cloud providers.
+- **[Taskfile](https://github.com/go-task/task)** (⭐ 14.2k) — Task runner and build tool. Simpler alternative to Make with cross-platform support and YAML configuration.
+- **[Gitpod](https://github.com/gitpod-io/gitpod)** (⭐ 13.5k) — Cloud development environments. Spin up ready-to-code dev environments for any GitHub, GitLab, or Bitbucket project.
+- **[Automatisch](https://github.com/automatisch/automatisch)** (⭐ 13.3k) — Self-hosted Zapier alternative for workflow automation. Connect apps and services without code, fully open-source and privacy-focused.
+- **[Espanso](https://github.com/espanso/espanso)** (⭐ 12.5k) — Cross-platform text expander. Accelerate your typing with custom snippets and abbreviations.
+- **[Keploy](https://github.com/keploy/keploy)** (⭐ 12.5k) — API testing and mocking tool. Automated end-to-end testing with intelligent mock generation and replay capabilities.
+- **[Figma Context MCP](https://github.com/GLips/Figma-Context-MCP)** (⭐ 11.7k) — MCP server that streams structured Figma layout context to AI coding agents like Cursor for design-aware development.
+- **[Leantime](https://github.com/Leantime/leantime)** (⭐ 8.6k) — Simple and powerful project management and strategic planning system. Agile methodology support with kanban boards and time tracking.
+- **[Cursor Talk to Figma MCP](https://github.com/grab/cursor-talk-to-figma-mcp)** (⭐ 5.7k) — MCP integration that lets Cursor read and programmatically update Figma designs via agentic workflows.
+- **[Documize community](https://github.com/documize/community)** (⭐ 2.3k) — Self-hosted knowledge base with wiki functionality. Organize documentation, runbooks, and team knowledge in one place.
+- **[Android Code Studio](https://github.com/AndroidCSOfficial/android-code-studio)** (⭐ 328) — Android IDE for developing full-featured Android apps on Android devices. Complete development environment with Gradle support, terminal, and AI assistant.
+- **[feeddeck](https://github.com/feeddeck/feeddeck)** (⭐ 278) — RSS and social media aggregator inspired by TweetDeck. Self-hosted feed reader with a familiar interface.
+- **[Cursor](https://github.com/getcursor/cursor)** (⭐ 0) — AI-powered code editor built on VS Code. Integrated AI assistant for code generation and refactoring.
+- **[ETL Pipeline Builder](https://github.com/ETL-Pipeline-Builder/etl-pipeline-builder)** (⭐ 0) — Low-code visual ETL pipeline constructor. Build data transformation workflows with drag-and-drop interface.
+- **[Flowcraft](https://github.com/flowcraft-io/flowcraft)** (⭐ 0) — Dependency-free automation platform. Simple and lightweight workflow automation without external dependencies.
+- **[Nyno](https://github.com/nyno-org/nyno)** (⭐ 0) — YAML-based workflow automation alternative to n8n. Lightweight workflow engine without cloud dependencies.
+- **[amphi-etl](https://github.com/AmphiAI/amphi-etl)** (⭐ 0) — Visual Python ETL pipeline builder. Drag-and-drop interface for creating data transformation workflows without coding.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+### Business & Enterprise
+
+ERP systems, helpdesk solutions, and business management tools.
+
+- **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** (⭐ 66.5k) — Open-source alternative to Notion. Privacy-first workspace for notes, docs, and project management with customizable blocks and databases.
+- **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** (⭐ 43.9k) — Free, unlimited, open-source team chat solution. Self-hosted alternative to Slack with extensive customization and integrations.
+- **[Plane](https://github.com/makeplane/plane)** (⭐ 39.8k) — Open-source project management tool. Modern alternative to Jira with issue tracking, cycles, and modules for software teams.
+- **[Logseq](https://github.com/logseq/logseq)** (⭐ 39.3k) — Privacy-first, open-source knowledge management and note-taking platform. Local-first tool with bidirectional linking and graph view.
+- **[Outline](https://github.com/outline/outline)** (⭐ 35.9k) — Modern knowledge base and wiki platform. Fast, searchable documentation with real-time collaboration for teams.
+- **[Mattermost](https://github.com/mattermost/mattermost)** (⭐ 34.4k) — Open-source, self-hosted Slack alternative. Secure team communication platform with file sharing and integrations.
+- **[ERPNext](https://github.com/frappe/erpnext)** (⭐ 30.1k) — Comprehensive open-source ERP system for automating companies. Financial accounting, inventory, CRM, and human resources in one platform.
+- **[Nginx](https://github.com/nginx/nginx)** (⭐ 28.5k) — High-performance web server and reverse proxy. Lightweight HTTP server with extensive configuration options and high concurrency support.
+- **[OpenWRT](https://github.com/openwrt/openwrt)** (⭐ 24.5k) — Embedded operating system for routers. Linux distribution for embedded devices with package management and extensive customization.
+- **[Bagisto](https://github.com/bagisto/bagisto)** (⭐ 24k) — Free e-commerce platform built on Laravel. Complete online store solution with active community and extensive features.
+- **[Zulip](https://github.com/zulip/zulip)** (⭐ 23.8k) — Powerful open-source team chat. Threaded conversations, topic-based organization, and extensive integrations.
+- **[Signal](https://github.com/signalapp/Signal-Desktop)** (⭐ 15.8k) — Private messenger with end-to-end encryption. Open-source messaging platform focused on privacy and security.
+- **[OpenProject](https://github.com/opf/openproject)** (⭐ 13.2k) — Web-based project management software. Comprehensive solution with project planning, team collaboration, and time tracking.
+- **[Matrix](https://github.com/matrix-org/synapse)** (⭐ 12k) — Open standard for decentralized communication. Secure, decentralized messaging network with bridges to other platforms.
+- **[pfSense](https://github.com/pfsense/pfsense)** (⭐ 5.4k) — Free, open-source firewall and router platform. Network security appliance with firewall, VPN, and routing capabilities.
+- **[GoatCounter](https://github.com/arp242/goatcounter)** (⭐ 5.3k) — Simple web analytics. Privacy-aware, lightweight, and open-source alternative to Google Analytics.
+- **[Kimai](https://github.com/kimai/kimai)** (⭐ 4.3k) — Time tracking and minimal accounting system for teams and freelancers. Track working hours and generate invoices.
+- **[OPNsense](https://github.com/opnsense/core)** (⭐ 4.1k) — Hardened FreeBSD-based firewall and routing platform. Enterprise-grade firewall distribution with extensive security features.
+- **[osTicket](https://github.com/osTicket/osTicket)** (⭐ 3.6k) — Popular ticket management system for customer support. PHP-based helpdesk solution trusted by thousands of organizations.
+- **[TastyIgniter](https://github.com/tastyigniter/TastyIgniter)** (⭐ 3.3k) — Restaurant platform and online ordering system. Laravel-based solution for managing restaurants and food delivery.
+- **[Vikunja](https://github.com/go-vikunja/vikunja)** (⭐ 2.7k) — Self-hosted to-do app with a lot of features. Open-source task management with lists, kanban boards, and Gantt charts.
+- **[Helpy](https://github.com/helpyio/helpy)** (⭐ 2.5k) — Open-source helpdesk with modern web interface. Customer support platform with knowledge base and ticketing system.
+- **[Taiga](https://github.com/kaleidos-ventures/taiga)** (⭐ 531) — Free open-source project management platform. Agile project management with kanban, issues, and team collaboration features.
+- **[Element](https://github.com/vector-im/element-web)** (⭐ 0) — Secure communication app for Matrix. Decentralized messaging with end-to-end encryption and modern interface.
+- **[Focalboard](https://github.com/mattermost/focalboard)** (⭐ 0) — Open-source alternative to Trello, Jira, and Asana. Project management tool with kanban boards, tables, and calendars.
+- **[Notabase](https://github.com/chadly/notabase)** (⭐ 0) — Powerful note-taking app designed for networked thought. Create connected notes with bidirectional links and graph visualization.
+- **[Peppermint](https://github.com/peppermint-tools/peppermint)** (⭐ 0) — Help desk and issue management system. Alternative to Zendesk and Jira built with Node.js.
+- **[Trilium](https://github.com/zadam/trilium)** (⭐ 0) — Hierarchical note-taking application with strong encryption. Build personal knowledge base with notes, images, and web clippings.
+- **[Unifiedtransform](https://github.com/kevwe7/unifiedtransform)** (⭐ 0) — Modern open-source software for school and educational management. Automation system for educational institutions.
+- **[WAHA (WhatsApp HTTP API)](https://github.com/Waha-ai/waha)** (⭐ 0) — Self-hosted WhatsApp API alternative. Open-source HTTP API for WhatsApp Business integration without third-party services.
+- **[aureuserp](https://github.com/aurorum/aureuserp)** (⭐ 0) — Powerful free ERP for business, finance, and logistics management. Complete business automation solution built on Laravel.
+- **[x402](https://github.com/x402/protocol)** (⭐ 0) — Protocol for instant internet micropayments. Open-source, free, and decentralized protocol enabling instant microtransactions on the internet.
+- **[ONLYOFFICE](https://github.com/ONLYOFFICE)** — Complete open-source office suite alternative to Microsoft Office. Online editors for documents, spreadsheets, and presentations with collaboration features.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## 研究与论文
+## 🤖 AI & Machine Learning
 
-👉C000D**
+LLM frameworks, AI agents, and machine learning tools.
 
-XE000F目录载有关于关键专题的深入研究、技术分析和综合说明:
+- **[Ollama](https://github.com/ollama/ollama)** (⭐ 156k) — Get up and running with large language models locally. Supports Llama 2, Code Llama, Mistral, and other open models.
+- **[Open WebUI](https://github.com/open-webui/open-webui)** (⭐ 115k) — User-friendly web interface for LLMs. Works with Ollama and OpenAI-compatible APIs.
+- **[FlowiseAI](https://github.com/FlowiseAI/Flowise)** (⭐ 46.5k) — Visual LLM workflow builder with drag-and-drop interface. Create AI agents, chatbots, and multi-agent systems without coding.
+- **[Jan](https://github.com/janhq/jan)** (⭐ 39.2k) — Open-source ChatGPT alternative that runs 100% offline. Desktop application for running LLMs locally.
+- **[LocalAI](https://github.com/mudler/LocalAI)** (⭐ 38.2k) — Drop-in replacement for OpenAI API running locally. Use consumer-grade hardware to run LLMs, generate images, and synthesize audio.
+- **[Fabric](https://github.com/danielmiessler/fabric)** (⭐ 34.2k) — Framework for integrating AI into personal workflows. Customizable AI patterns and prompts for everyday tasks.
+- **[gpt-researcher](https://github.com/assafelovic/gpt-researcher)** (⭐ 24.1k) — Autonomous research assistant powered by LLMs. Conducts deep research on any topic and generates comprehensive reports.
+- **[LeRobot](https://github.com/huggingface/lerobot)** (⭐ 19.3k) — End-to-end open-source stack for robot learning. Complete framework for training and deploying robotic systems.
+- **[restorePhotos](https://github.com/Nutlope/restorePhotos)** (⭐ 4.4k) — AI-powered photo restoration tool. Restore old and damaged photos using advanced machine learning algorithms.
+- **[VibeSDK](https://github.com/cloudflare/vibesdk)** (⭐ 3k) — SDK for building AI-powered, real-time interactive experiences on Cloudflare’s edge. Compose agents and multimodal interactions with low latency.
+- **[open-codex](https://github.com/ymichael/open-codex)** (⭐ 2.1k) — AI-powered terminal agent. Works with multiple LLM backends to assist with coding tasks directly in the terminal.
+- **[fastdup](https://github.com/visual-layer/fastdup)** (⭐ 1.8k) — Find duplicates and anomalies in image datasets. Fast and efficient tool for dataset quality control and curation.
+- **[VoltAgent Inspector](https://github.com/MCPJam/inspector)** (⭐ 1.4k) — Visual inspector for MCP servers. Open-source debugging and monitoring tool for Model Context Protocol implementations.
+- **[spacy-llm](https://github.com/explosion/spacy-llm)** (⭐ 1.3k) — Integrate LLMs into spaCy NLP pipelines. Combine traditional NLP with modern language models for enhanced text processing.
+- **[Open-Source-Face-Recognition-SDK](https://github.com/Faceplugin-ltd/Open-Source-Face-Recognition-SDK)** (⭐ 253) — Open-source face recognition SDK for Windows and Linux. Face detection, landmark extraction, feature embedding, and similarity comparison with 100% on-premise processing.
+- **[vtcode](https://github.com/vinhnx/vtcode)** (⭐ 242) — Terminal AI coding agent. Intelligent code generation and assistance without leaving your terminal.
+- **[spidercreator](https://github.com/carlosplanchon/spidercreator)** (⭐ 188) — LLM-powered web scraper generator. Automatically generate web scraping scripts using natural language descriptions.
+- **[Apple On Device OpenAI](https://github.com/gety-io/apple-on-device-openai)** (⭐ 0) — OpenAI-compatible API for local Apple models. Simplifies on-device inference for Apple Silicon with OpenAI API compatibility.
+- **[BrowserlessOS](https://github.com/browserlessai/browserlessai)** (⭐ 0) — Alternative browser with built-in AI agent. Privacy-focused browser with integrated AI assistance capabilities.
+- **[GPT-API-free / DeepSeek-API-free](https://github.com/gpt-api-free/gpt-api-free)** (⭐ 0) — Free API keys for AI platforms. Open-source service providing access to various AI model APIs without cost.
+- **[Kimi-Dev-72B](https://github.com/moonshotai/Kimi-Dev-72B)** (⭐ 0) — Open-source LLM for engineering tasks. Code generation, bug detection, autonomous testing, and patching of large industrial codebases.
+- **[LangChain](https://github.com/hwchase17/langchain)** (⭐ 0) — Framework for developing applications powered by language models. Build chatbots, agents, and RAG systems.
+- **[PrivateGPT](https://github.com/imartinez/privateGPT)** (⭐ 0) — Interact with your documents using LLMs without internet. 100% private, no data leaves your execution environment.
+- **[VoltAgent](https://github.com/VoltAgent/volt)** (⭐ 0) — Framework and constructor for AI agent chains. Open-source toolkit for building complex multi-agent systems.
+- **[Firebase Genkit](https://goo.gle/3WKxg0v)** — Framework for building AI applications with Node.js and Go. Google's open-source toolkit for developing AI-powered features and applications.
+- **[OpenXLA](https://openxla.org)** — Framework for optimizing and compiling ML/AI models. Google's open-source compiler stack for machine learning workloads.
+- **[Oscar](https://g.co/dev/oscar)** — Agent for automated support of OSS projects. Google's AI-powered assistant for open-source project maintenance and issue resolution.
+- **[ChromaDB + Ollama](https://freecodecamp.org/news/build-a-local-rag-app-with-ollama-and-chromadb)** — Vector database for RAG applications with local LLM support. Open-source stack for building retrieval-augmented generation systems.
+- **[Model Context Protocol (MCP)](https://freecodecamp.org/news/mcp-guide)** — Open-source protocol and server for connecting AI tools. Standardized framework for building AI agent integrations.
 
-- QQC000D**-俄罗斯企业大语言模型采纳分析. 涵盖案例、挑战和执行战略。
-- QQC000D**-深度潜入软件质量危机. 检查内存出漏,系统故障,以及基础设施支出3,640亿美元为何无法解决基本工程问题.
-
-### 项目想法收集
-
-👉C000D**
-
-XE000F目录包含与寄存器的编译链接,其中包含各种想法,模板,以及工作项目和个人侧面项目的灵感:
-
-** 计算机视野和AI:**
-- QQC000D** — 计算机视觉的通用Python框架,为现代CV项目提供可再使用的构件.
-- QQC000D** — 开放式源Python工具,用于使用计算机视觉进行交通视频计数的自动车辆.
-- QQC000D ** — 在短短几个小时内在任何Kaggle数据集上培训YOLO模型的准备使用模板.
-- QQC000D** — 由Halo-8 AI加速度在Raspberry Pi 5上运行的自动坑洞探测系统.
-
-** 工业和工程:**
-- QQC000D**——综合收集SCADA系统,PLC编程,BIM/CAD设计,点云处理,工程AI应用的工具.
-
-### 贡献这些
-
-使用提供的 XC000D 来贡献你自己的研究和分析.
-
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## 捐款
+## 🔄 CI/CD
 
-欢迎捐款! 请读取 XC000D, 详细了解如何提交拉动请求 。
+Continuous Integration and Continuous Deployment platforms and tools.
 
-### 质量标准
+- **[k6](https://github.com/grafana/k6)** (⭐ 29.2k) — Modern load testing tool for performance testing. JavaScript-based with powerful scripting capabilities for load, stress, and spike testing.
+- **[Locust](https://github.com/locustio/locust)** (⭐ 27.1k) — Distributed load testing framework. Define test scenarios in Python and simulate millions of concurrent users.
+- **[Jenkins](https://github.com/jenkinsci/jenkins)** (⭐ 24.6k) — Extensible automation server. Thousands of plugins for building, deploying, and automating projects.
+- **[GoCD](https://github.com/gocd/gocd)** (⭐ 7.3k) — Open-source continuous delivery server. Complex pipeline modeling with value stream visualization.
+- **[Woodpecker](https://github.com/woodpecker-ci/woodpecker)** (⭐ 5.7k) — Community fork of Drone with focus on simplicity. Self-hosted CI/CD with YAML configuration.
+- **[Drone](https://github.com/harness/drone)** (⭐ 0) — Container-native CI/CD platform. Pipeline as code with Docker-based builds.
+- **[GitHub Actions](https://github.com/features/actions)** (⭐ 0) — Workflow automation for building, testing, and deploying code. Native integration with GitHub repositories.
+- **[GitLab](https://gitlab.com/gitlab-org/gitlab)** — Complete DevOps platform with Git repository, CI/CD pipelines, issue tracking, and container registry.
+- **[Bazel](https://bazel.build)** — Open-source build system for large-scale projects. Google's fast, scalable, and multi-language build tool.
+- **[Apache JMeter](https://freecodecamp.org/news/jmeter-performance-testing)** — Free load testing tool for analyzing and measuring performance. Open-source solution for performance testing of applications.
 
-在提交之前,确保您的补充符合这些标准:
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
-- ** 积极保持**——定期更新和社区支持
-- ** 清除文件** — 附有设置指令的全面读取
-- ** 制作准备** ——稳定并得到广泛采用
-- ** 开源** ——允许许可(MIT,Apache 2.0,GPL等)
-- ** 保护的真正问题**——明确的使用大小写和价值主张
+---
 
-### 提交格式
+## 🎬 Video Processing
+
+Tools for video generation, manipulation, and analysis.
+
+- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** (⭐ 135k) — Feature-rich command-line video downloader. Fork of youtube-dl with additional features and fixes.
+- **[Godot Engine](https://github.com/godotengine/godot)** (⭐ 103k) — Free and open-source 2D and 3D game engine. Cross-platform game development with visual scripting and extensive feature set.
+- **[Immich](https://github.com/immich-app/immich)** (⭐ 84k) — Self-hosted photo and video backup solution. Alternative to Google Photos with automatic backups and facial recognition.
+- **[Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)** (⭐ 75.7k) — Real-time face swap and one-click deepfake video generation from a single image. GPU-accelerated pipeline for live streams and recordings.
+- **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** (⭐ 54.6k) — Complete cross-platform solution for recording, converting, and streaming audio and video. Industry standard for multimedia processing.
+- **[Jellyfin](https://github.com/jellyfin/jellyfin)** (⭐ 45.6k) — Self-hosted media server. Free and open-source alternative to Plex and Emby for streaming your media collection.
+- **[Upscayl](https://github.com/upscayl/upscayl)** (⭐ 41.1k) — AI-powered image upscaling tool. Enhance image quality using machine learning models locally.
+- **[HandBrake](https://github.com/HandBrake/HandBrake)** (⭐ 21.3k) — Video transcoder with comprehensive format support. GUI and CLI versions for batch processing.
+- **[LibrePhotos](https://github.com/LibrePhotos/librephotos)** (⭐ 7.8k) — Self-hosted photo management service. Open-source alternative to Google Photos with facial recognition and automatic tagging.
+- **[OpenTTD](https://github.com/OpenTTD/OpenTTD)** (⭐ 7.3k) — Open-source transportation business simulation game. Enhanced version of Transport Tycoon Deluxe with online multiplayer.
+- **[Veloren](https://github.com/veloren/veloren)** (⭐ 6.9k) — Open-source multiplayer voxel RPG. Community-driven game with procedural world generation and cooperative gameplay.
+- **[SuperTuxKart](https://github.com/supertuxkart/stk-code)** (⭐ 5k) — Free 3D kart racing game. Fun racing game featuring Tux and friends with various tracks and modes.
+- **[Kdenlive](https://github.com/KDE/kdenlive)** (⭐ 4.2k) — Free and open-source video editor. Professional non-linear video editing software with multi-track editing and effects.
+- **[auto-subs](https://github.com/tmoroney/auto-subs)** (⭐ 2.2k) — Automatic subtitle generator for videos. Offline-capable tool using speech recognition to create subtitle files.
+- **[shutter-encoder](https://github.com/paulpacifico/shutter-encoder)** (⭐ 1.7k) — Advanced video encoder and optimizer. Professional-grade video conversion with batch processing and format optimization.
+- **[Vexa](https://github.com/Vexa-ai/vexa)** (⭐ 1.5k) — Self-hosted API for meeting transcription automation. Open-source solution for automated audio-to-text conversion and meeting summaries.
+- **[Sora Extend](https://github.com/mshumer/sora-extend)** (⭐ 556) — Tool to chain and extend OpenAI Sora 2 video generations beyond 12-second limit. Automated prompt deconstruction and segment concatenation.
+- **[Audiobook Generator](https://github.com/BookxDev/bookxAI)** (⭐ 0) — AI-powered audiobook creation from text. Open-source tool that generates natural-sounding audiobooks using text-to-speech technology.
+- **[Pars Local Player (PLP)](https://github.com/pars-local-player/pars-local-player)** (⭐ 0) — Lightweight video player without telemetry or tracking. Privacy-focused media player with clean interface.
+- **[Sora 2 API Video Generator](https://github.com/sora-ai/video-generator)** (⭐ 0) — Open-source video generator with API. Create videos using advanced AI models and generation techniques.
+- **[wunjo](https://github.com/wladradchenko/wunjo)** (⭐ 0) — Head motion-driven animation generator from video. Deep learning-based tool for creating realistic facial animations.
+- **[Shotcut](https://www.shotcut.org/)** — Powerful and simple video editor with regular updates. Perfect for educational content and basic video/audio editing.
+- **[OBS Studio](https://obsproject.com/)** — Open-source streaming and recording software. Record desktop, stream to Twitch/YouTube, and capture calls for archives.
+- **[Blender](https://www.blender.org/)** — Professional 3D creation suite. Modeling, animation, rendering, and compositing for films, games, and visual effects.
+- **[Audacity](https://www.audacityteam.org/)** — Free, open-source audio editor. Record, edit, and mix audio tracks with professional-quality tools.
+- **[VLC Media Player](https://www.videolan.org/vlc/)** — Universal media player. Plays virtually all video and audio formats without codec installation.
+- **[MPV](https://mpv.io/)** — Lightweight, powerful media player. Command-line based with minimal GUI, highly customizable and scriptable.
+- **[Eclipsa Audio](https://goo.gle/41j1MRl)** — Free open-source 3D audio format and tools. Google's spatial audio technology for immersive sound experiences.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🎨 Design & Graphics
+
+Professional graphic design tools for creating images, illustrations, and visual content.
+
+- **[Onlook](https://github.com/onlook-dev/onlook)** (⭐ 23.3k) — AI-assisted design tool for visually creating, styling, and editing React UIs with live code synchronization.
+- **[figma2xaml](https://github.com/igorageev/figma2xaml)** (⭐ 31) — Figma plugin for converting vector paths to XAML. Enables C# developers to export Figma designs directly to XAML code for WPF, UWP, and .NET MAUI applications.
+- **[GIMP](https://www.gimp.org/)** — Free and open-source image editor. Professional alternative to Photoshop for photo editing, logo creation, and graphic design.
+- **[Inkscape](https://inkscape.org/)** — Professional vector graphics editor. Create scalable logos, illustrations, and print materials with precision.
+- **[Scribus](https://www.scribus.net/)** — Desktop publishing software for layout and print preparation. Create magazines, brochures, and product packaging.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🎯 3D Vision & Scanning
+
+Open-source tools and libraries for 3D computer vision, scanning, reconstruction, and point cloud processing.
+
+- **[OpenCV](https://github.com/opencv/opencv)** (⭐ 84.8k) — Fundamental computer vision library. Includes algorithms for stereo vision, depth processing, point cloud generation, stereo cameras, and post-processing.
+- **[Open3D](https://github.com/isl-org/Open3D)** (⭐ 13k) — Comprehensive library for 3D data processing. Point cloud manipulation, mesh generation, visualization, scan registration. Python and C++ support with extensive documentation.
+- **[Meshroom](https://github.com/alicevision/meshroom)** (⭐ 12.3k) — Powerful open-source photogrammetry pipeline for 3D reconstruction. Node-based visual programming interface, complete processing from photos to 3D models, Python API. Used in science, archaeology, and game development.
+- **[PCL (Point Cloud Library)](https://github.com/PointCloudLibrary/pcl)** (⭐ 10.7k) — Comprehensive library for 2D/3D image and point cloud processing. Industry-standard toolkit for filtering, segmentation, registration, surface reconstruction, and feature estimation.
+- **[COLMAP](https://github.com/colmap/colmap)** (⭐ 10.3k) — Industry-standard Structure-from-Motion and photogrammetry tool. Reconstruct 3D scenes from multiple images with automatic camera calibration and dense reconstruction pipelines.
+- **[TripoSR](https://github.com/VAST-AI-Research/TripoSR)** (⭐ 5.9k) — Deep learning toolkit for single-image 3D reconstruction. AI-powered surface reconstruction with fast inference and high accuracy for modern AI algorithms. [Website](https://triposrai.com/)
+- **[Potree](https://github.com/potree/potree)** (⭐ 5.2k) — WebGL-based point cloud renderer for large datasets. Interactive browser-based viewer supporting millions of points with level-of-detail rendering and measurement tools.
+- **[CloudCompare](https://github.com/CloudCompare/CloudCompare)** (⭐ 4.2k) — Open-source point cloud processing and analysis tool. Import/export standard formats, mesh generation, filtering, and scripting. Essential for comparing, merging, and analyzing point clouds.
+- **[pyRANSAC-3D](https://github.com/leomariga/pyRANSAC-3D)** (⭐ 645) — Python tool for fitting primitive 3D shapes in point clouds using RANSAC algorithm. Fast and robust geometric primitive detection (planes, spheres, cylinders, etc.).
+- **[Salingo Virtual 3D Scanner](https://github.com/Salingo/virtual-3d-scanner)** (⭐ 30) — Synthetic RGB-D image and point cloud generator. Scans virtual 3D models to generate datasets for computer vision training and development.
+- **[PiLiDAR](https://github.com/iLiAR/PLiDAR)** (⭐ 0) — DIY LiDAR 3D scanner project using Raspberry Pi and camera. Open hardware and software with CC-NC-SA license. Low-cost laser scanner for point cloud experiments.
+- **[PointLLM](https://github.com/OpenRobotLab/PointLLM)** (⭐ 0) — Extends Large Language Models to understand point clouds. Enables zero-shot 3D reasoning, question answering, and scene understanding from point cloud data. [ECCV 2024 Best Paper Candidate]
+- **[ReBound](https://github.com/ramdrop/ReBound)** (⭐ 0) — Open-source tool for visualizing and annotating LiDAR data. Designed for active learning systems in autonomous vehicles with intuitive 3D annotation interface.
+- **[OpenScan](https://openscan.eu)** — Modular open-source 3D scanner with photogrammetry. Includes schematics, documentation, and software for DIY assembly. Process scans locally or in the cloud for 3D printing, reverse engineering, and digital preservation.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🏭 Industrial Automation & SCADA
+
+Open-source tools for industrial automation, SCADA systems, PLC programming, and process control.
+
+- **[OpenPLC](https://www.openplcproject.com)** | [GitHub](https://github.com/thiagoralves/OpenPLC_v3) — Comprehensive open-source platform for PLC programming (IEC 61131-3: Ladder, FBD, ST, IL, SFC). Simulation, deployment to Arduino/Raspberry Pi and industrial hardware, web-based monitoring, Modbus TCP/RTU, SCADA integration.
+- **[Rapid SCADA](https://github.com/RapidScada/Scada)** (⭐ 723) — Russian-language SCADA project with support for Siemens S7, Allen-Bradley, Arduino, Raspberry Pi. Flexible visualization, reporting, integration with industrial networks.
+- **[Beremiz IDE](https://github.com/beremiz/beremiz)** (⭐ 366) — PLC platform with Python integration. Excellent for complex distributed projects with custom driver development capabilities.
+- **[ScadaBR](https://github.com/ScadaBR/ScadaBR)** (⭐ 141) — Web-based SCADA system built on Java. Easy deployment with Modbus RTU/TCP, OPC, SNMP support. Visualization, alarms, trends — ideal for small and medium-sized manufacturing facilities.
+- **[OpenSCADA / Eclipse SCADA](https://openscada.org)** | [Eclipse SCADA](https://eclipse.org/scada) — Powerful platform for data acquisition, visualization, management, and automation (HMI, Modbus, OPC, SNMP, IEC protocols, archiving, scripting). Suitable for manufacturing, energy, transportation, PLC integration, and custom solutions.
+- **[OpenAPC](http://www.openapc.com)** — Open-source platform for industrial control and visualization. Extensible with custom plugins for specialized applications.
+- **[PLC Fiddle](https://www.plcfiddle.com)** — Web-based PLC simulator (IEC 61131). Learn and debug PLC programs without installing software.
+- **[Pigweed SDK](https://goo.gle/4fA1coO)** — Tools for embedded systems development. Google's open-source embedded development platform with device drivers, libraries, and productivity tools.
+- **[TensorFlow Smart Buildings Simulator](https://goo.gle/oTOwjRBPmo)** — Open simulator for building energy management. Google's open-source platform for developing and testing smart building control algorithms.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🏗️ CAD & BIM Design
+
+Building Information Modeling (BIM) and Computer-Aided Design (CAD) tools for architecture, engineering, and construction.
+
+- **[FreeCAD](https://github.com/FreeCAD/FreeCAD)** (⭐ 26.9k) — Professional parametric 3D/2D CAD/BIM software with architectural workbench. FEM integration, Path (CAM/CNC), Python scripting. Suitable for architects, mechanical engineering, automation, and manufacturing.
+- **[IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell)** (⭐ 2.3k) — Library for working with IFC/BIM formats. Generation, parsing, and integration into automation and construction projects.
+- **[BlenderBIM](https://blenderbim.org)** — Extends Blender for BIM projects. IFC support, clash detection, documentation generation.
+- **[BIMvision](https://bimvision.com)** — Free software for viewing and analyzing BIM models from any platform. Cost estimation, collision detection, quantity takeoff.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🔐 Security & OSINT
+
+Security testing tools, OSINT frameworks, and vulnerability scanners.
+
+- **[sherlock](https://github.com/sherlock-project/sherlock)** (⭐ 70.2k) — Hunt social media accounts by username across 300+ websites. Python-based OSINT tool.
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** (⭐ 50.8k) — Self-hosted Bitwarden-compatible password manager. Lightweight server implementation with all Bitwarden client features.
+- **[Metasploit](https://github.com/rapid7/metasploit-framework)** (⭐ 36.9k) — Penetration testing framework. Comprehensive platform for developing, testing, and executing exploits against remote systems.
+- **[HashiCorp Vault](https://github.com/hashicorp/vault)** (⭐ 33.5k) — Secrets management and data protection. Identity-based access control for cloud applications.
+- **[CyberChef](https://github.com/gchq/CyberChef)** (⭐ 33.1k) — Multi-purpose data manipulation and analysis tool. Open-source web app for encryption, encoding, compression, and data analysis.
+- **[Keycloak](https://github.com/keycloak/keycloak)** (⭐ 30.9k) — Open-source identity and access management solution. Add authentication to applications with minimal code changes.
+- **[Trivy](https://github.com/aquasecurity/trivy)** (⭐ 29.8k) — Comprehensive security scanner for containers, filesystems, and IaC. Detects vulnerabilities, misconfigurations, and secrets.
+- **[Authelia](https://github.com/authelia/authelia)** (⭐ 25.8k) — Single Sign-On and 2FA portal. Authentication server with multi-factor authentication and authorization policies.
+- **[gitleaks](https://github.com/gitleaks/gitleaks)** (⭐ 23.9k) — SAST tool for detecting hardcoded secrets in git repositories. Scan commits, branches, and entire histories.
+- **[wg-easy](https://github.com/wg-easy/wg-easy)** (⭐ 23.3k) — Easy-to-use WireGuard VPN with web interface. Set up and manage VPN servers through a user-friendly dashboard.
+- **[trufflehog](https://github.com/trufflesecurity/trufflehog)** (⭐ 23.2k) — Detect leaked secrets in git repositories. Scans commits, branches, and PRs for exposed credentials and API keys.
+- **[ente](https://github.com/ente-io/ente)** (⭐ 22.7k) — End-to-end encrypted cloud storage for photos and videos. Privacy-first alternative to Google Photos with client-side encryption.
+- **[Authentik](https://github.com/goauthentik/authentik)** (⭐ 18.8k) — Flexible identity provider with SSO and user management. Supports OAuth, SAML, LDAP, and more authentication protocols.
+- **[fail2ban](https://github.com/fail2ban/fail2ban)** (⭐ 15.9k) — Intrusion prevention framework. Automatically ban IPs showing malicious behavior like brute-force attacks.
+- **[SpiderFoot](https://github.com/smicallef/spiderfoot)** (⭐ 15.8k) — Automated OSINT collection tool with web interface. Gather intelligence about targets from 100+ sources.
+- **[theHarvester](https://github.com/laramies/theHarvester)** (⭐ 14.9k) — Gather emails, subdomains, hosts, and employee names from public sources. Essential for reconnaissance.
+- **[Wazuh](https://github.com/wazuh/wazuh)** (⭐ 13.9k) — Enterprise-grade XDR and SIEM platform. Unified security monitoring, threat detection, and compliance management solution.
+- **[OWASP Amass](https://github.com/owasp-amass/amass)** (⭐ 13.8k) — In-depth attack surface mapping and asset discovery. Network mapping of organizations through scraping and APIs.
+- **[awesome-security](https://github.com/sbilly/awesome-security)** (⭐ 13.6k) — Curated list of security resources including tools, frameworks, and learning materials.
+- **[KeeWeb](https://github.com/keeweb/keeweb)** (⭐ 12.7k) — Cross-platform password manager compatible with KeePass. Web-based interface for managing encrypted password databases.
+- **[Zitadel](https://github.com/zitadel/zitadel)** (⭐ 12.2k) — Identity infrastructure for developers. Open-source identity and access management with modern protocols and cloud-native architecture.
+- **[OWASP Juice Shop](https://github.com/juice-shop/juice-shop)** (⭐ 12k) — Intentionally insecure web application for security training. Practice finding and exploiting vulnerabilities.
+- **[OSS-Fuzz](https://github.com/google/oss-fuzz)** (⭐ 11.5k) — Free fuzzing platform for open-source projects. Google's continuous fuzzing service that finds security vulnerabilities and stability issues.
+- **[OSINT Framework](https://github.com/lockfale/osint-framework)** (⭐ 9.8k) — Collection of OSINT tools organized by category. Web-based directory of open-source intelligence sources.
+- **[Falco](https://github.com/falcosecurity/falco)** (⭐ 8.4k) — Runtime security monitoring for containers and hosts. Behavioral detection engine for threat detection in Kubernetes and cloud environments.
+- **[Zeek](https://github.com/zeek/zeek)** (⭐ 7.2k) — Network analysis framework. Passive network monitoring tool for security research and operational network management.
+- **[Suricata](https://github.com/OISF/suricata)** (⭐ 5.8k) — High-performance network IDS/IPS engine. Industry-standard intrusion detection and prevention system for network traffic analysis.
+- **[OpenVAS](https://github.com/greenbone/openvas-scanner)** (⭐ 4.2k) — Vulnerability scanner for networks and systems. Comprehensive open-source vulnerability assessment and management solution.
+- **[Cerbos](https://github.com/cerbos/cerbos)** (⭐ 4.1k) — Authorization as a service. Open-source policy engine for fine-grained access control and authorization decisions.
+- **[Certipy](https://github.com/ly4k/Certipy)** (⭐ 3.2k) — Active Directory Certificate Services (AD CS) auditing and exploitation tool. Discover and abuse misconfigurations in AD CS.
+- **[Snort](https://github.com/snort3/snort3)** (⭐ 3.2k) — Network intrusion prevention system. Powerful open-source NIDS with advanced threat detection capabilities.
+- **[Nginx-Lua-Anti-DDoS](https://github.com/C0nw0nk/Nginx-Lua-Anti-DDoS)** (⭐ 1.5k) — Lua-based anti-DDoS script for Nginx. JavaScript puzzle challenge system to protect against automated attacks.
+- **[FusionAuth](https://github.com/FusionAuth/fusionauth-containers)** (⭐ 237) — Enterprise-grade authentication and authorization platform. Complete identity management solution with SSO, MFA, and user management.
+- **[Hanko](https://github.com/hankoio/hanko)** (⭐ 0) — Passwordless authentication server. Modern authentication solution with passkeys and WebAuthn support.
+- **[PrivyDrop](https://github.com/privydrop/privydrop)** (⭐ 0) — Peer-to-peer file drop with Docker deployment. Share files without cloud storage, fully self-hosted.
+- **[GrapheneOS](https://grapheneos.org/)** — Privacy and security-focused Android distribution. Enhanced security features and hardened system for maximum privacy.
+- **[Ory](https://github.com/ory)** — Cloud-native identity and access management platform. Enterprise-grade IAM solution with self-hosted options and extensive integrations.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 📚 Education
+
+Learning resources, courses, and comprehensive guides for developers.
+
+- **[freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp)** (⭐ 432k) — Learn to code for free with interactive lessons. Full-stack web development curriculum with certifications.
+- **[coding-interview-university](https://github.com/jwasham/coding-interview-university)** (⭐ 333k) — Complete study plan to become a software engineer. Covers algorithms, data structures, and system design.
+- **[System Design Primer](https://github.com/donnemartin/system-design-primer)** (⭐ 326k) — Learn how to design large-scale systems. Comprehensive guide with diagrams and examples.
+- **[OSSU Computer Science](https://github.com/ossu/computer-science)** (⭐ 198k) — Path to free self-taught education in Computer Science. Complete degree program using online courses.
+- **[The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)** (⭐ 159k) — Master the command line in one page. Practical examples for everyday use.
+- **[every-programmer-should-know](https://github.com/mtdvio/every-programmer-should-know)** (⭐ 95k) — Collection of technical things every software developer should know. Covers algorithms, data structures, distributed systems, security, architecture, and career development.
+- **[Joplin](https://github.com/laurent22/joplin)** (⭐ 52.1k) — Cross-platform note-taking application. Markdown editor with synchronization, encryption, and plugin support.
+- **[LearnGitBranching](https://github.com/pcottle/learnGitBranching)** (⭐ 32.8k) — Interactive visual Git tutorial. Master branching, merging, rebasing, and advanced Git workflows through hands-on exercises.
+- **[Overleaf](https://github.com/overleaf/overleaf)** (⭐ 16.8k) — Collaborative LaTeX editor. Real-time collaborative editing for scientific papers and documents.
+- **[Wallabag](https://github.com/wallabag/wallabag)** (⭐ 12.2k) — Self-hosted read-it-later service. Save articles for later reading with full-text search and tagging.
+- **[The Missing Semester](https://github.com/missing-semester/missing-semester)** (⭐ 5.4k) — MIT course about computing tools every developer should know. Shell, vim, git, debugging, and more.
+- **[AWS Zero to Hero](https://github.com/iam-veeramachaneni/aws-devops-zero-to-hero)** (⭐ 0) — Complete DevOps learning materials with examples. Open-source curriculum covering AWS, DevOps practices, and cloud infrastructure.
+- **[Tiny8](https://github.com/heyMP/tiny8)** (⭐ 0) — Educational processor simulator. Open-source tool for learning computer architecture and assembly programming.
+- **[Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com)** — Program for involving students in open-source development. Free program connecting students with open-source organizations for summer coding projects.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 📝 Research & Theses
+
+👉 **[Browse Theses Collection](./theses/)**
+
+The `theses/` directory contains in-depth research, technical analyses, and comprehensive notes on key topics:
+
+- **[LLM for Business](./theses/llm_for_business.md)** — Analysis of Large Language Model adoption in Russian enterprises. Covers use cases, challenges, and implementation strategies.
+- **[The Great Software Quality Crash](./theses/thesis_habr_great_software_crash_en.md)** — Deep dive into the software quality crisis. Examines memory leaks, system failures, and why $364 billion in infrastructure spending won't solve fundamental engineering problems.
+
+### Project Ideas Collection
+
+👉 **[Browse Project Ideas](./projects-ideas/)**
+
+The `projects-ideas/` directory contains curated links to repositories with ideas, templates, and inspiration for work projects and personal side projects:
+
+**Computer Vision & AI:**
+- **[Supervision](./projects-ideas/supervision.md)** — Universal Python framework for computer vision providing reusable building blocks for modern CV projects.
+- **[car-counter](./projects-ideas/car-counter.md)** — Open-source Python tool for automatic vehicle counting in traffic videos using computer vision.
+- **[yolo-training-template](./projects-ideas/yolo-training-template.md)** — Ready-to-use template for training YOLO models on any Kaggle datasets in just a few hours.
+- **[raspberry-pi-5-hailo-8-pothole-detection](./projects-ideas/raspberry-pi-5-hailo-8-pothole-detection.md)** — Automatic pothole detection system running on Raspberry Pi 5 with Hailo-8 AI acceleration.
+
+**Industrial & Engineering:**
+- **[Industrial Automation & SCADA](./projects-ideas/industrial-automation-scada.md)** — Comprehensive collection of tools for SCADA systems, PLC programming, BIM/CAD design, point cloud processing, and engineering AI applications.
+
+### Contributing Theses
+
+Use the provided [template](./theses/thesis_template_en.md) to contribute your own research and analysis.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🏷️ Repository Tags
+
+👉 **[Browse by Tags](./TAGS.md)**
+
+Repositories are automatically tagged based on programming languages, technologies, and categories. Browse repositories by tags to quickly find tools for specific technologies or use cases.
+
+Tags are generated automatically and include:
+- **Programming Languages** — Python, JavaScript, Rust, Go, and more
+- **Frameworks & Libraries** — React, Vue, Django, Flask, and more
+- **Tools & Platforms** — Docker, Kubernetes, CI/CD, DevOps tools
+- **Other Categories** — AI/ML, Security, Self-hosted, and more
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) for details on how to submit pull requests.
+
+### Quality Criteria
+
+Before submitting, ensure your addition meets these standards:
+
+- ✅ **Actively maintained** — Regular updates and community support
+- ✅ **Clear documentation** — Comprehensive README with setup instructions
+- ✅ **Production-ready** — Stable and widely adopted
+- ✅ **Open-source** — Permissive licensing (MIT, Apache 2.0, GPL, etc.)
+- ✅ **Solves real problems** — Clear use case and value proposition
+
+### Submission Format
 
 ```markdown
 - **[Repository Name](https://github.com/user/repo)** (⭐ 0) — Brief description highlighting key features, tech stack, and use cases. Explain what makes this tool unique and why developers should use it.
 ```
 
-### 示例
+### Example
 
 ```markdown
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** (⭐ 57.2k) — Ultra-fast recursive search tool written in Rust. Respects .gitignore by default and outperforms grep, ag, and ack on large codebases with regex support and parallel execution.
@@ -673,81 +690,81 @@ XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
 
 ---
 
-## 赞!
+## 🌟 Awesomes
 
-包括软件开发、工具和技术等各种课题。
+Curated collections of awesome lists covering various topics in software development, tools, and technologies.
 
-- QQC000D** (QQ437k) – 主编程通过从零开始再创造出你最喜欢的技术. 用于建设数据库的教学,网页服务器,Git,Docker等.
-- QQC000D** (QQ414k)——原创优酷榜. 所有话题的精彩名单
-- QQC000D**(QQ258k)——自办公益服务替代服务. 专注隐私的应用程序可以在自己的服务器上运行.
-- QQC[awesome-mac](https://github.com/jaywcjlove/awesome-mac)0D** (XQ 93.1k) – 用于macOS的令人惊叹的应用程序,软件,工具,和闪亮的东西的解析列表. macOS软件和公用事业综合目录.
-- QQC000D** (QQ79.6k) – GitHub上的初学者友好项目被破解名单. 新贡献者开源的完美起点.
-- QQC000D** (QQ 46.2k) – macOS的开源应用的被破译列表. 全面收集免费开源macOS软件.
-- QQC000D** (QQ 43.7k) ——云, DevOps,和IT的免费认证的被查证名单. 免费学习途径和认证机会。
-- QQC000D**(XQ35.8k)——命令行框架,工具包,指南和gizmos.
-- QQC000D** (QQ 35.3k) – AI编码助理的光标规则被破译列表. AI动力开发工具的最佳做法和配置.
-- QQC000D** (QQ 34.5k) —— 杜克资源,工具,和教程的解析列表. Docker生态系统和最佳做法综合指南。
-- QQC000D** (XQ 30k)- macOS命令行工具及公用设施被破译列表. macOS电力用户的基本命令行工具.
-- QQC000D** (XQ 28.4k) – GitHub profile README 示例和模板的解析列表. 创建惊人的 GitHub 简介的灵感和工具.
-- QQC000D** (XQ 28k) — 令人愉快的VS代码软件包和资源的解析列表. Visual Studio代码的基本扩展和工具.
-- QQC000D** (QQ 27.1k) — 令人惊叹的"GitHub Actions"被破译列表. 社区定制的有用 GitHub 动作工作流程集 。
-- QQC000D** (XQ 26.7k) – 程序员相信的被破解的谬误列表. 关于共同方案拟订假设和误解的重要提醒。
-- QQC000D** (QQ 24.4k) – 令人赞叹的Linux软件被破解列表. 为Linux用户全面收集应用程序和工具.
-- QQC000D** (QQ24k)——黑客工具与资源的被破译列表. 为道德黑客和安全研究人员提供网络安全综合工具包.
-- QQC000D** (QQ 20.6k) – 自由ChatGPT替代品和资源的被破译列表. 免费AI聊天和语言模型选项.
-- QQC000D** (QQ 20k) —— 令人惊叹的README被破译列表. 创建优秀 README 文件的示例和模板 。
-- QQC000D** (XQ 19.6k) – MLops 生产ML的工具和资源的被综述列表. 在生产中部署和维持ML的全面指南.
-- QQC000D** (QQ 17.9k) ——按类别排列的命令行应用的被破译列表.
-- QQC000D** (QQ 17.6k) — 自我托管软件与服务的被禁指南. 为自办应用程序提供全面的辅导和资源。
-- QQC000D** (QQ 17.3k) – 令人赞叹的macOS软件被破解列表. 收集生产力工具、公用事业和macOS应用。
-- QQC000D** (QQ 14.1k) – 令人惊叹的创意编码资源解析列表. 创意编程和基因艺术的工具、图书馆和框架。
-- QQC000D** (QQ 13k)——针对工程师和开发商的市场营销被封禁的资源. 为技术专业人员提供实用营销知识。
-- QQC000D** (XQ 13k)- 心智扩张图书解析列表. 书挑战思想,拓展思想视野.
-- QQC000D** (XQ 12.8k) ——为开发者和技术爱好者制作的令人惊叹的播客被禁名单. 涵盖编程,技术和产业趋势的最佳播客.
-- QQC000D** (QQ 12.7k) —— 终端框架,插件,和资源的被校验列表.
-- QQC000D** (QQ 12.1k)- 常见访谈问答被查实. 快速参考技术访谈和编码挑战.
-- QQC000D** (QQ 10.6k) – 内燃机制造商和开发商资源解析列表. 建设Indie项目的工具、社区和资源。
-- QQC000D** (XQ 10.4k) — 编码,设计,开发指南的简化列表. 软件开发的最佳做法和标准。
-- QQC000D** (QQ 10k) – 软件架构资源解析列表. 软件架构模式、原则和做法综合指南。
-- QQC000D** (XQ 9.7k) – 黑客,笔试者,安全研究者常用的搜索引擎被破译清单. 以隐私为重点的专门搜索工具。
-- QQC000D** (QQ 6.6k) ——软件开发学习路径和职业进展路线图的解析列表.
-- QQC000D** (QQ 3.6k) — IT,安全,开发证书的被验证列表. 技术专业认证综合指南.
-- QQC000D** (QQ 3.1k) —— 被责备的首选链接和资源集. (仅以汉语发音).
-- QQC000D** (QQ 2.3k) – Android rooting工具,向导,和资源的解析列表. Android定制与开发综合集.
-- QQC000D** (QQ 1.4k) —— 软件开发中用于命名事物的工具和资源的被验证列表. 用于选择优秀可变名称,项目名称等的有帮助的指南和工具.
-- QQC000D** (QQ 1.2k) — 真棒的名单列表. 涵盖技术和发展各个方面的目录综合目录。
-- QQC000D** (XQ 1.1k) – GPT相关工具,模型和资源的解析列表. GPT模型、应用和开发工具的完整指南。
-- QQC000D** (QQ 1k) —— 机器学习中用于向导预测的被校验资源列表. 综合收集论文、工具和关于不确定性量化的教程。
-- QQC000D**(XQ692)——收集与AI有关的工具、框架和资源。 人工智能技术与应用的被破解的宝藏.
-- QQC000D** (QQ 629) – 被破解的神经网络研究,工具,和资源列表. 神经形态计算和脑启发AI综合收藏.
-- QQC000D** (QQ 252)——科技中秘密知识和隐藏宝石的被查清单. 以社区贡献取而代之"秘密知识之书".
-- QQC000D**——开源项目视觉依赖性分析. Google用于理解和可视化开源生态系统中的依赖关系的工具.
+- **[build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)** (⭐ 437k) — Master programming by recreating your favorite technologies from scratch. Tutorials for building databases, web servers, Git, Docker, and more.
+- **[awesome](https://github.com/sindresorhus/awesome)** (⭐ 414k) — The original awesome list. Curated list of awesome lists across all topics.
+- **[awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)** (⭐ 258k) — Self-hosted alternatives to popular services. Privacy-focused applications you can run on your own servers.
+- **[awesome-mac](https://github.com/jaywcjlove/awesome-mac)** (⭐ 93.1k) — Curated list of awesome applications, software, tools, and shiny things for macOS. Comprehensive directory of macOS software and utilities.
+- **[awesome-for-beginners](https://github.com/MunGell/awesome-for-beginners)** (⭐ 79.6k) — Curated list of beginner-friendly projects on GitHub. Perfect starting point for new contributors to open source.
+- **[open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)** (⭐ 46.2k) — Curated list of open source applications for macOS. Comprehensive collection of free and open-source macOS software.
+- **[Free-Certifications](https://github.com/cloudcommunity/Free-Certifications)** (⭐ 43.7k) — Curated list of free certifications for cloud, DevOps, and IT. Free learning paths and certification opportunities.
+- **[awesome-shell](https://github.com/alebcay/awesome-shell)** (⭐ 35.8k) — Command-line frameworks, toolkits, guides, and gizmos.
+- **[awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** (⭐ 35.3k) — Curated list of cursor rules for AI coding assistants. Best practices and configurations for AI-powered development tools.
+- **[awesome-docker](https://github.com/veggiemonk/awesome-docker)** (⭐ 34.5k) — Curated list of Docker resources, tools, and tutorials. Comprehensive guide to Docker ecosystem and best practices.
+- **[awesome-macos-command-line](https://github.com/herrbischoff/awesome-macos-command-line)** (⭐ 30k) — Curated list of macOS command line tools and utilities. Essential command-line tools for macOS power users.
+- **[awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme)** (⭐ 28.4k) — Curated list of GitHub profile README examples and templates. Inspiration and tools for creating amazing GitHub profiles.
+- **[awesome-vscode](https://github.com/viatsko/awesome-vscode)** (⭐ 28k) — Curated list of delightful VS Code packages and resources. Essential extensions and tools for Visual Studio Code.
+- **[awesome-actions](https://github.com/sdras/awesome-actions)** (⭐ 27.1k) — Curated list of awesome GitHub Actions. Community-curated collection of useful GitHub Actions workflows.
+- **[awesome-falsehood](https://github.com/kdeldycke/awesome-falsehood)** (⭐ 26.7k) — Curated list of falsehoods programmers believe in. Important reminders about common programming assumptions and misconceptions.
+- **[Awesome-Linux-Software](https://github.com/luong-komorebi/Awesome-Linux-Software)** (⭐ 24.4k) — Curated list of awesome Linux software. Comprehensive collection of applications and tools for Linux users.
+- **[h4cker](https://github.com/The-Art-of-Hacking/h4cker)** (⭐ 24k) — Curated list of hacking tools and resources. Comprehensive cybersecurity toolkit for ethical hackers and security researchers.
+- **[awesome-free-chatgpt](https://github.com/LiLittleCat/awesome-free-chatgpt)** (⭐ 20.6k) — Curated list of free ChatGPT alternatives and resources. Free AI chat and language model options.
+- **[awesome-readme](https://github.com/matiassingers/awesome-readme)** (⭐ 20k) — Curated list of awesome READMEs. Examples and templates for creating excellent README files.
+- **[awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning)** (⭐ 19.6k) — Curated list of MLops tools and resources for production ML. Comprehensive guide to deploying and maintaining ML in production.
+- **[awesome-cli-apps](https://github.com/agarrharr/awesome-cli-apps)** (⭐ 17.9k) — Curated list of command-line applications organized by category.
+- **[Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide)** (⭐ 17.6k) — Curated guide to self-hosting software and services. Comprehensive tutorials and resources for self-hosted applications.
+- **[awesome-macOS](https://github.com/iCHAIT/awesome-macOS)** (⭐ 17.3k) — Curated list of awesome macOS software. Collection of productivity tools, utilities, and applications for macOS.
+- **[awesome-creative-coding](https://github.com/terkelg/awesome-creative-coding)** (⭐ 14.1k) — Curated list of awesome creative coding resources. Tools, libraries, and frameworks for creative programming and generative art.
+- **[Marketing-for-Engineers](https://github.com/goabstract/Marketing-for-Engineers)** (⭐ 13k) — Curated resources for marketing aimed at engineers and developers. Practical marketing knowledge for technical professionals.
+- **[Mind-Expanding-Books](https://github.com/hackerkid/Mind-Expanding-Books)** (⭐ 13k) — Curated list of mind-expanding books. Books that challenge thinking and expand intellectual horizons.
+- **[awesome-podcasts](https://github.com/rShetty/awesome-podcasts)** (⭐ 12.8k) — Curated list of awesome podcasts for developers and tech enthusiasts. Best podcasts covering programming, technology, and industry trends.
+- **[terminals-are-sexy](https://github.com/k4m4/terminals-are-sexy)** (⭐ 12.7k) — Curated list of terminal frameworks, plugins, and resources.
+- **[30-seconds-of-interviews](https://github.com/Chalarangelo/30-seconds-of-interviews)** (⭐ 12.1k) — Curated collection of common interview questions and answers. Quick reference for technical interviews and coding challenges.
+- **[awesome-indie](https://github.com/mezod/awesome-indie)** (⭐ 10.6k) — Curated list of resources for indie makers and developers. Tools, communities, and resources for building indie projects.
+- **[awesome-guidelines](https://github.com/Kristories/awesome-guidelines)** (⭐ 10.4k) — Curated list of guidelines for coding, design, and development. Best practices and standards for software development.
+- **[awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)** (⭐ 10k) — Curated list of software architecture resources. Comprehensive guide to software architecture patterns, principles, and practices.
+- **[awesome-hacker-search-engines](https://github.com/edoardottt/awesome-hacker-search-engines)** (⭐ 9.7k) — Curated list of search engines useful for hackers, pentesters, and security researchers. Privacy-focused and specialized search tools.
+- **[awesome-roadmaps](https://github.com/liuchong/awesome-roadmaps)** (⭐ 6.6k) — Curated list of roadmaps for software development learning paths and career progression.
+- **[awesome-certificates](https://github.com/PanXProject/awesome-certificates)** (⭐ 3.6k) — Curated list of IT, security, and development certificates. Comprehensive guide to professional certifications in tech.
+- **[favorite-link](https://github.com/guanguans/favorite-link)** (⭐ 3.1k) — Curated collection of favorite links and resources. (Available only in Chinese)
+- **[awesome-android-root](https://github.com/awesome-android-root/awesome-android-root)** (⭐ 2.3k) — Curated list of Android rooting tools, guides, and resources. Comprehensive collection for Android customization and development.
+- **[awesome-naming](https://github.com/gruhn/awesome-naming)** (⭐ 1.4k) — Curated list of tools and resources for naming things in software development. Helpful guides and tools for choosing good variable names, project names, and more.
+- **[awesome-lists](https://github.com/mthcht/awesome-lists)** (⭐ 1.2k) — Awesome list of awesome lists. Comprehensive directory of curated lists covering all aspects of technology and development.
+- **[awesome-gpt](https://github.com/awesome-gptX/awesome-gpt)** (⭐ 1.1k) — Curated list of GPT-related tools, models, and resources. Complete guide to GPT models, applications, and development tools.
+- **[awesome-conformal-prediction](https://github.com/valeman/awesome-conformal-prediction)** (⭐ 1k) — Curated list of resources for conformal prediction in machine learning. Comprehensive collection of papers, tools, and tutorials for uncertainty quantification.
+- **[AITreasureBox](https://github.com/superiorlu/AITreasureBox)** (⭐ 692) — Collection of AI-related tools, frameworks, and resources. Curated treasure trove of artificial intelligence technologies and applications.
+- **[Awesome-Spiking-Neural-Networks](https://github.com/TheBrainLab/Awesome-Spiking-Neural-Networks)** (⭐ 629) — Curated list of spiking neural network research, tools, and resources. Comprehensive collection for neuromorphic computing and brain-inspired AI.
+- **[fucking-the-book-of-secret-knowledge](https://github.com/Correia-jpv/fucking-the-book-of-secret-knowledge)** (⭐ 252) — Curated list of secret knowledge and hidden gems in tech. Alternative to "The Book of Secret Knowledge" with community contributions.
+- **[Open Source Insights](https://goo.gle/4cHkc2v)** — Visual dependency analysis for open-source projects. Google's tool for understanding and visualizing the dependency relationships in open-source ecosystems.
 
-XC[⬆ Back to Top](#-awesome-repositories-collection-)0D 时
-
----
-
-## * 贡献者
-
-特别感谢@theayushmishr添加了ytarchive,鹅AI代理框架,librewolf浏览器和Bloatynosy. 你的贡献大大改善了这个收藏!
+[⬆ Back to Top](#-awesome-repositories-collection-)
 
 ---
 
-## 许可证
+## 👥 Contributors
 
-这个项目根据麻省理工学院许可证颁发许可——详情见XC000D文件.
+Special thanks to @theayushmishr for adding ytarchive, Goose AI agent framework, librewolf browser, and Bloatynosy. Your contributions greatly improve this collection!
 
 ---
 
-## 语言版本
+## 📄 License
 
-- XC000D——你来了
-- XC000D — 俄语版本
-- XC000D-简化中文版
-- XC000D — 西班牙语版
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+## 🌍 Language Versions
+
+- [🇬🇧 English](README.md) — You are here
+- [🇷🇺 Русский](README.ru.md) — Russian version
+- [🇨🇳 简体中文](README.zh-CN.md) — Simplified Chinese version
+- [🇪🇸 Español](README.es.md) — Spanish version
 
 ---
 
 <p align="center">
-<sub> 为开发者社区所创建 </sub>
+  <sub>Curated with ❤️ for the developer community</sub>
 </p>
