@@ -1,0 +1,120 @@
+name: Check Repository Links
+
+on:
+  schedule:
+    # Запускается каждую неделю в понедельник в 02:00 UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+    # Позволяет запускать вручную
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests
+      
+      - name: Check repository links
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/check_links.py
+        continue-on-error: true
+      
+      - name: Create issue for broken links
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const resultsFile = 'data/link_check_results.json';
+            
+            if (!fs.existsSync(resultsFile)) {
+              console.log('No results file found');
+              return;
+            }
+            
+            const results = JSON.parse(fs.readFileSync(resultsFile, 'utf8'));
+            const broken = Object.values(results).filter(r => r.status !== 'ok' && r.status !== 'redirected');
+            
+            if (broken.length === 0) {
+              console.log('No broken links found');
+              return;
+            }
+            
+            const title = `🔗 Broken Repository Links Detected (${broken.length})`;
+            const body = `## Broken Links Found
+            
+            The link checker found ${broken.length} repository link(s) that need attention:
+            
+            ${broken.map(r => `- **${r.full_name}**: ${r.error || r.status}`).join('\n')}
+            
+            ### Details
+            
+            | Repository | Status | Error |
+            |------------|--------|-------|
+            ${broken.map(r => `| [${r.full_name}](${r.url}) | ${r.status} | ${r.error || 'N/A'} |`).join('\n')}
+            
+            ---
+            
+            *This issue was automatically created by the link checker workflow.*
+            *Last checked: ${new Date().toISOString()}*
+            `;
+            
+            // Проверяем, есть ли уже открытый issue
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'broken-links'
+            });
+            
+            if (issues.length > 0) {
+              // Обновляем существующий issue
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues[0].number,
+                body: body
+              });
+              console.log(`Updated existing issue #${issues[0].number}`);
+            } else {
+              // Создаём новый issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['broken-links', 'automated']
+              });
+              console.log('Created new issue for broken links');
+            }
+      
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-results
+          path: data/link_check_results.json
+          retention-days: 30
+

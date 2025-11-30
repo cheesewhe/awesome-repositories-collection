@@ -55,6 +55,7 @@ This repository brings together battle-tested open-source projects spanning **de
 - [Geographic Information Systems](#geographic-information-systems)
 - [Research & Theses](#-research--theses)
 - [Project Ideas](#project-ideas-collection)
+- [Repository Tags](#-repository-tags)
 - [Awesomes](#-awesomes)
 - [Contributors](#-contributors)
 - [Contributing](#-contributing)
@@ -640,6 +641,22 @@ The `projects-ideas/` directory contains curated links to repositories with idea
 ### Contributing Theses
 
 Use the provided [template](./theses/thesis_template_en.md) to contribute your own research and analysis.
+
+[⬆ Back to Top](#-awesome-repositories-collection-)
+
+---
+
+## 🏷️ Repository Tags
+
+👉 **[Browse by Tags](./TAGS.md)**
+
+Repositories are automatically tagged based on programming languages, technologies, and categories. Browse repositories by tags to quickly find tools for specific technologies or use cases.
+
+Tags are generated automatically and include:
+- **Programming Languages** — Python, JavaScript, Rust, Go, and more
+- **Frameworks & Libraries** — React, Vue, Django, Flask, and more
+- **Tools & Platforms** — Docker, Kubernetes, CI/CD, DevOps tools
+- **Other Categories** — AI/ML, Security, Self-hosted, and more
 
 [⬆ Back to Top](#-awesome-repositories-collection-)
 

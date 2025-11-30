@@ -1,0 +1,63 @@
+name: Update Repository Metadata
+
+on:
+  schedule:
+    # Запускается каждую неделю в понедельник в 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+    # Позволяет запускать вручную
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - 'scripts/fetch_repo_metadata.py'
+
+jobs:
+  update-metadata:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests
+      
+      - name: Fetch repository metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/fetch_repo_metadata.py
+      
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain data/repo_metadata.json)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push metadata
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/repo_metadata.json
+          git commit -m "chore: update repository metadata [skip ci]"
+          git push
+
